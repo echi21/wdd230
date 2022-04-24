@@ -1,0 +1,81 @@
+/*HTML selectors*/
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 16px;
+  justify-items: center;
+}
+
+header, footer {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+header {
+  margin: 2rem auto;
+  border: 1px solid gray;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  background-color: #B3DEB6;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  justify-items: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 20px black;
+}
+
+header img {
+  width: 50%;
+  height: auto;
+  margin-left: 2rem;
+  border-radius: 0.4rem;
+}
+
+h1, h2 {
+  font-family: "Merriweather", Garamond, serif;
+}
+
+main {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-shadow: 0 0 3px black;
+  padding: 0.2rem;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
+
+li {
+  margin-left: 2rem;
+  padding: 0.2rem;
+}
+
+footer {
+  margin: 2rem auto;
+  border: 1px solid gray;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  background-color: #B3DEB6;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 20px black;
+}
