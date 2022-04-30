@@ -1,7 +1,9 @@
 /*HTML selectors*/
 
+/*
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
+*/
 
 html {
   scroll-behavior: smooth;
@@ -14,7 +16,7 @@ html {
 }
 
 body {
-  font-family: Poppins, Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-size: 16px;
   justify-items: center;
 }
