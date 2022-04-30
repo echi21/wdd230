@@ -5,9 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
 */
 
-html {
+/*html {
   scroll-behavior: smooth;
-}
+}*/
 
 * {
   margin: 0;
@@ -32,19 +32,20 @@ header {
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
   background-color: #B3DEB6;
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  justify-items: center;
-  align-items: center;
   border-radius: 0.5rem;
   box-shadow: 2px 2px 20px black;
+  display: grid;
+  grid-template-columns: 124px 1fr;
+  justify-items: center;
+  align-items: center;
 }
 
 header img {
-  width: 50%;
+  width: 100px;
   height: auto;
-  margin-left: 2rem;
-  border-radius: 0.4rem;
+  margin-left: 1.5rem;
+  border-radius: 0.5rem;
+  border-style: solid;
 }
 
 h1, h2 {
@@ -61,23 +62,30 @@ h2 {
   padding: 0.2rem;
 }
 
+hr {
+  margin: 0.5rem;
+}
+
 p {
-  font-size: 14px;
+  font-size: 1rem;
   margin-bottom: 2rem;
 }
 
 li {
   margin-left: 2rem;
-  padding: 0.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 footer {
   margin: 2rem auto;
   border: 1px solid gray;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
   background-color: #B3DEB6;
   text-align: center;
   border-radius: 0.5rem;
   box-shadow: 2px 2px 20px black;
+}
+
+footer p {
+  margin: 0.5rem;
 }
