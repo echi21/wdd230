@@ -26,4 +26,8 @@
     font-size: 1.2rem;
   }
 
+  footer img {
+    margin: 0;
+  }
+
 }
