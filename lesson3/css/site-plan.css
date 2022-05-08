@@ -13,24 +13,16 @@ font-family: 'Roboto Serif', sans-serif;
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: white;
-  --secondary-color: #FF700A;
-  --accent1-color: #B80000;
-  --accent2-color: #660000;
+  --secondary-color: black;
+  --accent1-color: #BFBFBF;
+  --accent2-color: #FFD700;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Merriweather", Garamond, serif;
   --paragraph-font: Poppins, Arial, sans-serif;
 
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: black;  /* headlines on a white background */
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: black; /* paragraph text on a white background */
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #B80000;
   --nav-link-color: #00297A;
-  --nav-background-color: #FF700A;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #B80000;
 }
 
 html {
@@ -40,36 +32,38 @@ html {
 body {
   max-width: 940px;
   margin: 0 auto;
-  background-color: white;
+  background-color: var(--primary-color);
   padding: 1em;
+  font-size: 18px;
 }
 
 img {
   max-width: 20%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
 }
 
 header {
   padding: 1em;
   text-align: center;
-  color: var(--paragraph-color-on-color);
-  background-color: var(--paragraph-background-color);
+  color: var(--accent1-color);
+  background-color: var(--secondary-color);
 }
-
+/*
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
-}
+}*/
 
 p {
   font-family: var(--paragraph-font);
-  color: var(--paragraph-color);
-  padding: 1em;
+  padding: 0.3em;
 }
 
+#returning-instruction {
+  font-size: 1rem;
+}
 .colors {
   width: 100%;
   min-width: 350px;
@@ -102,26 +96,28 @@ p {
   background-color: var(--accent2-color);
 }
 
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
-}
-
 nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
+  background-color: var(--accent1-color);
+  line-height: 1em;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.4em;
+  display: flex;
+  flex-direction: row;
 }
 
+nav div {
+  flex: 1 1 auto;
+}
+/*
 nav > ul {
   list-style-type: none;
   display: flex;
-}
+}*/
 
 nav a {
+  display: block;
   padding:1em;
-  min-width: 70px;
+  text-decoration: none;
 }
 
 nav a:link, nav a:visited {
@@ -129,6 +125,20 @@ nav a:link, nav a:visited {
 }
 
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+  color: var(--accent2-color);
+  background-color: var(--secondary-color);
+}
+
+footer {
+  margin: 2rem auto;
+  padding: 1rem;
+  color: var(--accent1-color);
+  background-color: var(--secondary-color);
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+footer p {
+  margin: 0.5rem;
+  font-size: 1.2rem;
 }
