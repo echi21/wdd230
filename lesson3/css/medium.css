@@ -1,0 +1,39 @@
+
+@media only screen and (min-width: 40em) {
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    text-align: left;
+    background-color: unset;
+    border-color: #B3DEB6;
+    border-bottom-style: solid;
+  }
+
+  main p {
+    font-size: 1.1rem;
+    text-align: unset;
+    margin-left: 1rem;
+  }
+
+  main img {
+    display: inline;
+    margin: 1rem;
+  }
+
+  footer p {
+    font-size: 1.1rem;
+  }
+
+}
