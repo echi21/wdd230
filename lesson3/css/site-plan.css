@@ -1,15 +1,5 @@
 /*HTML Selectors*/
 
-/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&display=swap');*/
-/*@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');*/
-/*@import url('https://fonts.googleapis.com/css?family=Ubuntu|Lato');*/
-/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
-@import url('https://fonts.googleapis.com/css2?family=Poppins');*/
-/*
-font-family: 'Roboto Serif', sans-serif;
-*/
-
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: white;
@@ -17,7 +7,6 @@ font-family: 'Roboto Serif', sans-serif;
   --accent1-color: #BFBFBF;
   --accent2-color: #FFD700;
 
-  /* change the values below to your chosen font(s) */
   --heading-font: "Merriweather", Garamond, serif;
   --paragraph-font: Poppins, Arial, sans-serif;
 
@@ -41,8 +30,9 @@ img {
   max-width: 20%;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: var(--heading-font);
+  margin-left: 0.5rem;
 }
 
 header {
@@ -58,12 +48,14 @@ header > h1, header > h2 {
 
 p {
   font-family: var(--paragraph-font);
+  margin-left: 0.5rem;
   padding: 0.3em;
 }
 
 #returning-instruction {
   font-size: 1rem;
 }
+
 .colors {
   width: 100%;
   min-width: 350px;
@@ -141,4 +133,11 @@ footer {
 footer p {
   margin: 0.5rem;
   font-size: 1.2rem;
+}
+
+@media (max-width: 40em) {
+  nav {
+    flex-direction: column;
+  }
+
 }
