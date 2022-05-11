@@ -19,11 +19,10 @@ html {
 }
 
 body {
-  max-width: 70%;
+  font-family: var(--paragraph-font);
+  max-width: 90%;
   margin: 0 auto;
-  background-color: var(--primary-color);
-  /*padding: 1em;*/
-  font-size: 18px;
+  font-size: 16px;
 }
 
 img {
@@ -45,12 +44,40 @@ header {
 
 p {
   font-family: var(--paragraph-font);
-  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  margin: 1rem;
   padding: 0.3em;
 }
 
 #returning-instruction {
   font-size: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: var(--accent1-color); 
+}
+
+nav div {
+  flex: 1 1 auto;
+}
+
+nav a {
+  font-size: 1.2rem;
+  display: block;
+  padding:1em;
+  text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--accent2-color);
+  background-color: var(--secondary-color);
 }
 
 .colors div {
@@ -84,45 +111,13 @@ p {
   margin: 0 auto;
 }
 
-nav {
-  background-color: var(--accent1-color);
-  line-height: 1em;
-  text-align: center;
-  font-size: 1.4em;
-  display: flex;
-  flex-direction: row;
-}
-
-nav div {
-  flex: 1 1 auto;
-}
-
-nav a {
-  display: block;
-  padding:1em;
-  text-decoration: none;
-}
-
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
-}
-
-nav a:hover {
-  color: var(--accent2-color);
-  background-color: var(--secondary-color);
-}
-
-ul li {
-  font-family: var(--paragraph-font);
-}
-
 footer {
   margin: 2rem auto;
   padding: 1rem;
   color: var(--accent1-color);
   background-color: var(--secondary-color);
   text-align: center;
-  font-size: 1.2rem;
+  /*font-size: 1.2rem;*/
 }
 
 footer p {

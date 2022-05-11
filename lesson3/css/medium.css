@@ -2,7 +2,7 @@
 @media only screen and (min-width: 40em) {
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   nav {
@@ -10,11 +10,11 @@
   }
 
   nav a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   h2 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     text-align: left;
     background-color: unset;
     border-color: #B3DEB6;

@@ -13,7 +13,7 @@ body {
 }
 
 header, nav, main, footer {
-  max-width: 70%;
+  max-width: 90%;
 }
 
 header {
@@ -24,8 +24,8 @@ header {
   padding: 0.5rem;
   background-color: #B3DEB6;
   text-align: center;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  /*border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;*/
 }
 
 nav {
@@ -72,7 +72,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-top: 1.5rem;
   padding: 0.5rem;
   text-align: center;
