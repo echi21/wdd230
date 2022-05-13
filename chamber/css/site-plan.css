@@ -1,0 +1,133 @@
+/*HTML Selectors*/
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: white;
+  --secondary-color: black;
+  --accent1-color: #BFBFBF;
+  --accent2-color: #FFD700;
+
+  --heading-font: "Merriweather", Garamond, serif;
+  --paragraph-font: Poppins, Arial, sans-serif;
+
+  --nav-link-color: #00297A;
+  --nav-hover-link-color: white;
+}
+
+html {
+  background-color: var(--primary-color);
+}
+
+body {
+  font-family: var(--paragraph-font);
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+img {
+  max-width: 20%;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  margin-left: 0.5rem;
+}
+
+header {
+  margin-top: 3rem;
+  padding: 1em;
+  text-align: center;
+  color: var(--accent1-color);
+  background-color: var(--secondary-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  font-size: 1.2rem;
+  margin: 1rem;
+  padding: 0.3em;
+}
+
+#returning-instruction {
+  font-size: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: var(--accent1-color); 
+}
+
+nav div {
+  flex: 1 1 auto;
+}
+
+nav a {
+  font-size: 1.2rem;
+  display: block;
+  padding:1em;
+  text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--accent2-color);
+  background-color: var(--secondary-color);
+}
+
+.colors div {
+  margin-left: 2rem;
+  width: 6rem;
+  height: 2rem;
+  border-style: solid;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+}
+
+.accent1 p {
+  margin: 0 auto;
+}
+
+.accent2{
+  background-color: var(--accent2-color);
+}
+
+.accent2 p {
+  margin: 0 auto;
+}
+
+footer {
+  margin: 2rem auto;
+  padding: 1rem;
+  color: var(--accent1-color);
+  background-color: var(--secondary-color);
+  text-align: center;
+  /*font-size: 1.2rem;*/
+}
+
+footer p {
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 48em) {
+  nav {
+    flex-direction: column;
+  }
+
+}
