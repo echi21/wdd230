@@ -1,29 +1,18 @@
-/*HTML selectors*/
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
 
-@media only screen and (min-width: 60em) {
-
-  h1 {
-    font-size: 1.9rem;
+  nav ul li {
+    width: 10rem;
+    text-align: center;
   }
 
-  nav a {
-    font-size: 1.2rem;
-  }
 
-  h2 {
-    font-size: 1.5rem;
-  }
 
-  main p {
-    font-size: 1.2rem;
-  }
+  nav ul li a {
+    font-size: 1.1rem;
+    padding: .5rem 1rem;
 
-  footer img {
-    margin: 0;
-  }
 
-  footer p {
-    font-size: 1.2rem;
   }
 
 }

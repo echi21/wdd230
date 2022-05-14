@@ -1,39 +1,27 @@
-
-@media only screen and (min-width: 40em) {
-
-  h1 {
-    font-size: 1.7rem;
+/* 35rem is also 560px when basefont is 16px */
+@media only screen and (min-width: 46rem) {
+  nav button {
+    display: none;
   }
 
-  nav {
-    flex-direction: row;
+  #hamburger-btn {
+    display: none;
   }
 
-  nav a {
-    font-size: 1.1rem;
+  nav ul#primary-nav {
+    display: flex;
+    justify-content: center;
+    /*margin-left: 2vw; me hizo aparecer un espacio donde va el button*/
+    /*border-left: 1px solid rgba(0,0,0,0.3);*/
   }
-
-  h2 {
-    font-size: 1.3rem;
-    text-align: left;
-    background-color: unset;
-    border-color: #B3DEB6;
-    border-bottom-style: solid;
+/*
+  nav ul :first-child {
+    border-left: 1px solid rgba(0,0,0,0.3);
   }
-
-  main p {
-    font-size: 1.1rem;
-    text-align: unset;
-    margin-left: 1rem;
-  }
-
-  main img {
-    display: inline;
-    margin: 1rem;
-  }
-
-  footer p {
-    font-size: 1.1rem;
+*/
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.3);
   }
 
 }

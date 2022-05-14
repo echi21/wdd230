@@ -1,118 +1,163 @@
-/*HTML selectors*/
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: white;
+  --secondary-color: black;
+  --accent1-color: #BFBFBF;
+  --accent2-color: #FFD700;
+
+  --heading-font: "Merriweather", Garamond, serif;
+  --paragraph-font: "Poppins", Arial, sans-serif;
+
+  --nav-link-color: #00297A;
+  --nav-hover-link-color: white;
 }
 
 body {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: var(--paragraph-font);
   justify-items: center;
   font-size: 16px;
 }
 
-header, nav, main, footer {
-  max-width: 90%;
-}
-
 header {
-  margin-top: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid gray;
-  padding: 0.5rem;
-  background-color: #B3DEB6;
-  text-align: center;
-  /*border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;*/
+  background-color: var(--secondary-color);
+  /*display: flex;
+  /*flex-direction: row;*/
+  /*justify-content: space-between;
+  align-items: center;*/
+  margin: 0 auto;
 }
 
-nav {
+#header-one-box {
+  /*background-color: var(--secondary-color);*/
+  display: flex;
+  /*flex-direction: row;*/
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
+}
+
+#logo-title-box {
+  display: flex;
+  align-items: center;
+  /*margin-left: 1rem*/;
+}
+
+#logo-box img {
+  width: 8rem;
+  height: auto;
+  margin-left: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+#title-box {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  background-color: #B3DEB6; /*36454f*/
-  border: 1px solid gray;
+  /*margin-left: .5rem;*/
+  color: var(--accent1-color);
 }
 
-nav div {
-  flex: 1 1 auto;
+#title-box h1 {
+  /*color: var(--accent1-color);*/
+  font-size: 1.8rem;
+  margin: 0;
+  /*text-align: center;*/
 }
 
-nav a {
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
+#title-box p {
+  letter-spacing: 1pt;
+  margin-top: 0.5rem;
+  /*padding-top: 0;*/
+  /*color: var(--accent1-color);*/
+  font-weight: 700;
   font-size: 1rem;
 }
 
-nav a:link, nav a:visited {
-  color: #00297A;
+#social-box img {
+  width: 2.4rem;
+  height: auto;
+  margin-right: 1rem;
 }
 
-nav a:hover {
-  color: #B3DEB6;
-  background-color: #3E2F28;
-}
-
-main {
-  margin: 0 auto;
+#header-two-box {
+  color: var(--accent1-color);
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 h1, h2 {
-  font-family: "Merriweather", Garamond, serif;
+  font-family: var(--heading-font);
 }
 
-h1 {
-  font-size: 1.5rem;
-}
+/*********************************************************************************************************************/
 
-h2 {
-  font-size: 1.1rem;
-  margin-top: 1.5rem;
-  padding: 0.5rem;
+nav {
+  background-color: var(--accent1-color);
   text-align: center;
-  background-color: #B3DEB6;
 }
 
-main p {
-  margin-top: 1rem;
-  text-align: center;
- /*/margin-left: 1rem;*/
+nav button {
+  /*margin: .2rem 2vw;*/
+  background-color: transparent;
+  border: none;
+  /*display: block;*/
+  font-size: 2rem;
+  color: #555;
 }
-
-main img {
-  max-width: 40%;
-  height: auto;
+/*
+#hamburger-btn span {
   display: block;
-  margin: 1rem auto;
+}*/
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
 }
 
-footer {
-  margin: 2rem auto;
-  padding: 1rem;
-  border: 1px solid gray;
-  background-color: #B3DEB6;
+nav ul.open {
+  display: block;
+}
+
+nav ul li a {
+  display: block;
+  padding: .8rem 2vw;
+  text-decoration: none;
+  color: var(--nav-link-color);
   text-align: center;
-  font-size: 1.2rem;
+  /*border-top: 1px solid rgba(0,0,0,0.5);*/
 }
 
-footer img {
-  width: 2.5rem;
-  border-radius: 1.5rem;
-  margin: 0.5rem;
-  float: left;
+/*nav ul li.active a {
+  background-color: rgba(0,0,0,0.2);
+  color: #fff;
+}*/
+
+nav ul li a:hover {
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
 }
 
-footer img:hover {
-  width: 2.7rem;
+#hamburger-btn span:nth-child(1) {
+  display: block;
 }
 
-footer p {
-  margin: 0.5rem;
-  font-size: 1rem;
+#hamburger-btn span:nth-child(2) {
+  display: none;
 }
+
+#hamburger-btn.open span:nth-child(1) {
+  display: none;
+}
+
+#hamburger-btn.open span:nth-child(2) {
+  display: block;
+}
+
