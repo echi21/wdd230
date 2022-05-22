@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins">
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/large.css">
+  <link rel="icon" href="favicon.ico">
+  <meta name="author" content="Ezequiel Iannone">
+  <meta name="description" content="A simple web page to store favorite scriptures, practicing the DOM manipulation.">
+  <title>Lesson 4 - Ezequiel Iannone</title>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <h1>&#128366; Book of Mormon - Top 25</h1>
+  <main>
+    <div class="input">
+      <label>Enter Book and Chapter<br>
+        <input type="text" id="fav-chap" placeholder="Alma 5" required>
+      </label>
+      <button type="submit" id="submit-button">Add Chapter</button>
+    </div>
+    
+    <div class="list-container">
+      <ul class="list">
+      </ul>
+    </div>
+  </main>
+</body>
+</html>
