@@ -21,6 +21,12 @@
     border-bottom-style: solid;
   }
 
+  h3 {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-left: 1rem;
+  }
+
   main p {
     font-size: 1.1rem;
     text-align: unset;
@@ -30,6 +36,10 @@
   main img {
     display: inline;
     margin: 1rem;
+  }
+
+  .colors div {
+    margin-left: 2rem;
   }
 
   footer p {
