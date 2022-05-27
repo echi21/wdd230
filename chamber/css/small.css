@@ -18,6 +18,8 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
   --nav-hover-link-color: white;
 }
 
+/*-------------------------------------------------------------------------------*/
+
 body {
   font-family: var(--paragraph-font);
   margin: 0 auto;
@@ -50,7 +52,7 @@ header {
 }
 
 #logo-box img {
-  width: 8rem;
+  width: 5rem;
   height: auto;
   margin-left: 0.8rem;
   margin-bottom: 1rem;
@@ -63,24 +65,29 @@ header {
   color: var(--accent1-color);
 }
 
-#title-box h1 {
+h1 {
   /*color: var(--accent1-color);*/
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   margin: 0;
   /*text-align: center;*/
 }
 
 #title-box p {
-  letter-spacing: 1pt;
-  margin-top: 0.5rem;
+  margin: 0;
+  /*letter-spacing: 1pt;*/
+  /*margin-top: 0.5rem;*/
   /*padding-top: 0;*/
   /*color: var(--accent1-color);*/
   font-weight: 700;
   font-size: 1rem;
 }
 
+#social-box {
+  display: flex;
+}
+
 #social-box img {
-  width: 2.4rem;
+  width: 2.5rem;
   height: auto;
   margin-right: 1rem;
 }
@@ -95,12 +102,17 @@ header {
 
 h1, h2 {
   font-family: var(--heading-font);
+
+}
+
+h2 {
+  font-size: 1.1rem;
 }
 
 /*********************************************************************************************************************/
 
 nav {
-  background-color: var(--accent1-color);
+  background-color: var(--secondary-color);
   text-align: center;
 }
 
@@ -109,9 +121,11 @@ nav button {
   background-color: transparent;
   border: none;
   /*display: block;*/
-  font-size: 2rem;
-  color: #555;
+  font-size: 3rem;
+  /*color: #555;*/
+  color: var(--accent2-color);
 }
+
 /*
 #hamburger-btn span {
   display: block;
@@ -128,11 +142,13 @@ nav ul.open {
   display: block;
 }
 
-nav ul li a {
+#primary-nav a {
   display: block;
-  padding: .8rem 2vw;
+  /*padding: .8rem 2vw;*/
+  padding: .5rem;
   text-decoration: none;
-  color: var(--nav-link-color);
+  /*color: var(--nav-link-color);*/
+  color: var(--accent2-color);
   text-align: center;
   /*border-top: 1px solid rgba(0,0,0,0.5);*/
 }
@@ -142,9 +158,18 @@ nav ul li a {
   color: #fff;
 }*/
 
-nav ul li a:hover {
-  background-color: var(--secondary-color);
-  color: var(--accent2-color);
+#primary-nav a:hover {
+  /*
+  background-color: var(--accent1-color);
+  color: var(--nav-link-color);*/
+  border: var(--accent2-color) 1px solid;
+}
+
+#primary-nav a:active {
+  /*background-color: var(--secondary-color);
+  color: var(--accent2-color);*/
+  /*color: var(--primary-color);*/
+  color: var(--nav-link-color);
 }
 
 #hamburger-btn span:nth-child(1) {
@@ -163,7 +188,6 @@ nav ul li a:hover {
   display: block;
 }
 
-
 footer {
   background-color: var(--secondary-color);
   /*font-size: 1rem;*/
@@ -173,7 +197,6 @@ footer {
 }
 
 footer img {
-  width: 8rem;
+  width: 5rem;
   height: auto;
 }
-

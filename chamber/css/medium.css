@@ -1,18 +1,68 @@
 /* 35rem is also 560px when basefont is 16px */
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 51rem) {
+
+  #logo-box img {
+    width: 7rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #title-box p {
+    margin-top: 0.5rem;
+    /*padding-top: 0;*/
+    /*color: var(--accent1-color);*/
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  nav {
+    padding: .5rem;
+  }
+
   nav button {
     display: none;
   }
 
-  nav ul#primary-nav {
+  #primary-nav {
     display: flex;
     justify-content: center;
   }
 
-  nav ul li a {
-    border: none;
-    border-right: 1px solid rgba(0,0,0,0.3);
+  #primary-nav li {
+    width: 6rem;
+    text-align: center;
   }
+
+  #primary-nav a {
+    border: none;
+    font-size: 1.1rem;
+    /*border-right: 1px solid rgba(0,0,0,0.3);*/
+  }
+
+  #social-box img {
+    width: 1.5rem;
+  }
+
+/***********************************************************/
+
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  main p {
+    /*font-size: 1.1rem;*/
+  }
+
+/************************************************************/
+
+
 
   main {
     width: 90%;
@@ -67,5 +117,11 @@
     height: 305px;
     border: 1px solid rgba(0,0,0,0.3);
   }
+
+  footer img {
+    width: 7rem;
+  }
+
+
 
 }
