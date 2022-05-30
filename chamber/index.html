@@ -18,8 +18,9 @@
     <!-- enhance-desktop -->
     <link rel="stylesheet" href="css/large.css">
   
-    <!--<script src="js/scripts.js" defer></script>-->
-    <link rel="shortcut icon" href="favicon3-48x48.ico">
+    <script src="js/scripts.js" defer></script>
+    
+    <link rel="icon" href="favicon3-48x48.ico">
     <title>Lesson 4 - Ezequiel Iannone</title>
     <meta name="author" content="Ezequiel Iannone">
     <meta name="description" content="This is a simple project as part of learning to apply a website planning document.
@@ -38,38 +39,49 @@
           </div>
         </div>
         <nav>
-          <button id="hamburger-btn"><span>&#9776</span><span>X</span></button>
+          <button id="hamburger-btn"><span>&#9776;</span><span>X</span></button>
           <ul id="primary-nav">
-            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Discover</a></li>
-            <li class="active"><a href="#">Directory</a></li>
+            <li><a href="#">Directory</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
         <div id="social-box">
-          <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-circle-64x64.png" alt="return"></a>
-          <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-circle-64x64.png" alt="return"></a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook-circle-64x64.png" alt="return">
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img src="images/linkedin-circle-64x64.png" alt="return">
+          </a>
         </div>
       </div>
+      <nav>
+        <ul id="secondary-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
       <div id="header-box2">
         <span id="current-date"></span>
       </div>
     </header>
     
     <main>
-      <div class="main-box1">Event</div>
-      <div class="main-box2">Weather</div>
-      <div class="main-box3">Join</div>
-      <div class="main-box4">Hero with site name and call to action</div>
-      <div class="main-box5">New Release</div>
-      <div class="main-box6">
-        <div>Spotlight 1</div>
-        <div>Spotlight 2</div>
-        <div>Spotlight 3</div>
+      <div class="event-box">Event</div>
+      <div class="weather-box">Weather</div>
+      <div class="join-box">Join</div>
+      <div class="hero-box">Hero with site name and call to action</div>
+      <div class="news-box">News Release</div>
+      <div class="spots-box">
+        <div class="spot1">Spotlight 1</div>
+        <div class="spot2">Spotlight 2</div>
+        <div class="spot3">Spotlight 3</div>
       </div>
-      <!--<div class="main-box7"></div>
-      <div class="main-box8"></div>-->
     </main>
     
     <footer>
@@ -94,10 +106,10 @@
       <div id="footer-main-box2">
         <hr>
         <!--<a href="../index.html"><img src="images/return_arrow.jpg" alt="return" title="Return to the home page"></a>-->
-        <p>&copy; <span id="year"></span>  Balcarce Chamber of Commerce - C. Ezequiel Iannone - WDD 230 Project - <span id="updated-date"></span></p>
+        <p>&copy; <span id="year"></span>
+          Balcarce Chamber of Commerce - C. Ezequiel Iannone - WDD 230 Project - <span id="updated-date"></span>
+        </p>
       </div>
     </footer>
-
-    <script src="js/scripts.js"></script>
   </body>
 </html>

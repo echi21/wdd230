@@ -35,7 +35,7 @@ document.getElementById("current-date").textContent = `${dayName}, ${numberDay} 
 
 
 function toggleMenu() {
-  document.getElementById("primary-nav").classList.toggle("open");
+  document.getElementById("secondary-nav").classList.toggle("open");
   document.getElementById("hamburger-btn").classList.toggle("open");
 }
 
