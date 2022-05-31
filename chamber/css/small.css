@@ -238,3 +238,17 @@ footer img {
 hr {
   margin-bottom: 1rem;
 }
+
+#footer-email-box span {
+  font-size: 1.2rem;
+}
+
+#footer-email-box a {
+  text-decoration-line: none;
+  color: var(--accent2-color);
+  padding: .2rem;
+}
+
+#footer-email-box a:hover {
+  border: var(--nav-hover-link-color) 1px dotted;
+}
