@@ -6,7 +6,6 @@
 }
 
 body {
-  background-color: darkgray;
   font-family: "Poppins", "Arial", serif;
   font-size: 16px;
 }
@@ -14,13 +13,13 @@ body {
 main {
   margin: 0 auto;
   padding: 2rem;
-  background-color: lightgray;
+  /*background-color: lightgray;*/
 }
 
 h1 {
   text-align: center;
-  font-size: 1.4rem;
-  background-color: lightskyblue;
+  font-size: 1.6rem;
+  background-color: #B3DEB6;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -35,7 +34,7 @@ img[data-src] {
 }
 
 img {
-  background: lightskyblue;
+  background: #B3DEB6;
   display: block;
   margin: 0 auto;
   padding: 2rem;
@@ -46,7 +45,7 @@ img {
 
 footer {
   text-align: center;
-  background-color: lightskyblue;
-  font-size: 1.5rem;
+  background-color: #B3DEB6;
+  font-size: 1.2rem;
   padding: 2rem;
 }
