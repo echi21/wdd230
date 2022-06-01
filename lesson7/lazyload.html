@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--, maximum-scale=1">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- phone-default -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- enhance-tablet -->
+    
+    <title>Lesson 7 - Ezequiel Iannone</title>
+    <meta name="author" content="Ezequiel Iannone">
+    <meta name="description" content="Example of using progressive loading particularly of images.">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Progressive Loading of Images</h1>
+    </header>
+    <main>
+      <picture>
+        <img src="https://via.placeholder.com/300x400" data-src="images/cat.jpg" alt="Cat">
+      </picture>
+      <picture>
+        <img src="https://via.placeholder.com/300x400/" data-src="images/camera.jpg" alt="Camera">
+      </picture>
+      <picture>
+        <img src="https://via.placeholder.com/300x400" data-src="images/mountain.jpg" alt="Mountain">
+      </picture>
+      <picture>
+        <img src="https://via.placeholder.com/300x400" data-src="images/monkey.jpg" alt="Monkey">
+      </picture>
+      <picture>
+        <img src="https://via.placeholder.com/300x400" data-src="images/laptop.jpg" alt="Laptop">
+      </picture>
+      <picture>
+        <img src="https://via.placeholder.com/300x400" data-src="images/buildings.jpg" alt="Buildings">
+      </picture>
+    </main>
+    
+    <footer>
+      <p>&copy; <span id="year"></span>
+        C. Ezequiel Iannone - WDD 230 Project - <span id="updated-date"></span>
+      </p>
+    </footer>
+  </body>
+</html>
