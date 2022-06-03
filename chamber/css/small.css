@@ -176,7 +176,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   /*grid-template-rows: 300px 300px 300px 300px 300px 300px;*/
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;*/
   grid-gap: 5px;
   justify-content: center;
 }
@@ -184,6 +184,7 @@ main {
 main div {
   /*background-color: #BFBFBF;*/
   border: var(--secondary-color) 1px solid;
+  min-width: 300px;
   /*padding: 1rem;*/
 }
 
@@ -211,7 +212,8 @@ main div {
   grid-row: 5 / 7;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+
+  /*grid-template-rows: 1fr;*/
 }
 
 .spots-box div {
@@ -302,8 +304,6 @@ main h2 {
   text-align: center;
 }
 
-
-
 .news-box p {
   font-size: 1.1rem;
   padding: 1rem;
@@ -326,7 +326,7 @@ main h2 {
   text-align: center;
 }
 
-.spot1 p, .spot2 {
+.spot1 p, .spot2 p {
   font-size: 1.1rem;
   padding: 1rem;
 }
