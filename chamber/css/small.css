@@ -19,7 +19,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
   --nav-hover-link-color: white;
 }
 
-/*********************************************************************************************************************/
+/*************************************************/
 
 body {
   font-family: var(--paragraph-font);
@@ -106,7 +106,7 @@ h3 {
   font-size: 1rem;
 }
 
-/*********************************************************************************************************************/
+/*************************************************/
 
 nav {
   background-color: var(--secondary-color);
@@ -115,8 +115,6 @@ nav {
 }
 
 nav button {
-  /*margin: .2rem 2vw;*/
-  /*margin: 0 auto;*/
   background-color: transparent;
   border: none;
   font-size: 3rem;
@@ -160,7 +158,7 @@ nav ul li.active {
   border: var(--accent2-color) 1px solid;
 }
 
-/*********************************************************************************************************************/
+/*************************************************/
 #hamburger-btn span:nth-child(1) {
   display: block;
 }
@@ -176,7 +174,7 @@ nav ul li.active {
 #hamburger-btn.open span:nth-child(2) {
   display: block;
 }
-/*********************************************************************************************************************/
+/*************************************************/
 
 main {
   width: 90%;
@@ -251,7 +249,7 @@ main div {
 /*************************************************/
 .join-box {
   display: none;
-  padding: .2rem;
+  /*padding: .2rem;*/
   text-align: center;
 }
 
@@ -264,7 +262,7 @@ main div {
 
 .join-box p {
   font-size: 1.1rem;
-  padding: 1rem;
+  /*padding: 1rem;*/
   margin-top: 2rem;
 }
 /*************************************************/
@@ -274,13 +272,13 @@ main div {
 /*************************************************/
 .news-box {
   grid-row: 4 / 5;
-  padding: .2rem;
+  /*padding: .2rem;*/
   text-align: center;
 }
 
 .news-box p {
   font-size: 1.1rem;
-  padding: 1rem;
+  /*padding: 1rem;*/
 }
 /*************************************************/
 .spots-box {
@@ -288,7 +286,7 @@ main div {
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
-  padding: 1rem;
+  /*padding: 1rem;*/
   /*grid-template-rows: 1fr;*/
 }
 /*************************************************/
@@ -314,7 +312,7 @@ main div {
 /*************************************************/
 .spot1 p, .spot2 p {
   font-size: 1.1rem;
-  padding: 1rem;
+  /*padding: 1rem;*/
 }
 /*************************************************/
 
