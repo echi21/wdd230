@@ -2,32 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-    <meta name="viewport" content="width=device-width, initial-scale=1"><!--, maximum-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins">
-    <!--For some reason, in the previous link I needed to delete part of the text that was after 'Poppins', which said :wght@100&display=swap
-    in order to see this last font in a right way-->
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">-->
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- phone-default -->
     <link rel="stylesheet" href="css/small.css">
-    <!-- enhance-tablet -->
     <link rel="stylesheet" href="css/medium.css">
-    <!-- enhance-desktop -->
     <link rel="stylesheet" href="css/large.css">
-  
-    <script src="js/scripts.js" defer></script>
-    
     <link rel="icon" href="favicon3-48x48.ico">
     <title>Lesson 4 - Ezequiel Iannone</title>
     <meta name="author" content="Ezequiel Iannone">
     <meta name="description" content="This is a simple project as part of learning to apply a website planning document.
       In this case, this file expresses appropriated font styles that will be used in a final project.">
+    <script src="js/scripts.js" defer></script>
   </head>
   <body>
-    <div>&#129309;</div>
+    <div class="banner">&#129309;<span>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>
+    </div>
     <header>
       <div id="header-box1">
         <div id="logo-title-box">
@@ -75,14 +67,71 @@
     </header>
     
     <main>
-      <div class="event-box">Event</div>
-      <div class="weather-box">Weather</div>
-      <div class="join-box">Join</div>
-      <div class="hero-box">Hero with site name and call to action</div>
-      <div class="news-box">News Release</div>
+      <div class="event-box">
+        <h2>Ribbon Cutting Ceremony</h2>
+        <h3>The Central Hospital “Dr. Ramón Carrillo" of San Luis</h3>
+        <p>
+          The new establishment has the highest investment in the province. It includes the construction
+          of 50,000 covered square meters, the acquisition of state-of-the-art equipment and special facilities.
+        </p>
+      </div>
+      
+      <div class="weather-box">
+        <h2>Weather</h2>
+        <div class="wind-speed-box">
+          <img src="images/weather.webp" alt="">
+          <span id="temperature">1°C</span>
+        </div>
+        <p><strong>Partially Cloudy</strong></p>
+        <hr>
+        <div class="wind-speed-box">
+          <p>Wind Speed:</p><span id="wind-speed"> 2.5 km/h</span>
+        </div>
+        <div class="wind-speed-box">
+          <p>Wind Chill:</p><span id="wind-chill">N/A</span>
+        </div>
+      </div>
+      
+      <div class="join-box">
+        <button>Join Us</button>
+        <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+      </div>
+      
+      <div class="hero-box">
+        Hero with site name and call to action
+      </div>
+      
+      <div class="news-box">
+        <h2>News Release</h2>
+        <p>An analysis by the Argentine Chamber of Commerce and Services (CAC) shows that, in 2021, the commercial
+          exchange between Argentina and Ecuador was 872 million dollars, 61.2% higher than in 2020. In this way,
+          bilateral trade returned to growing after two consecutive years of decline, reaching its highest historical
+          level by exceeding the previous record of 2018 of 725 million dollars by 12.7%.
+  
+          During the past year, exports from Argentina to Ecuador were 504 million dollars, which meant a strong
+          increase of 114.4% compared to 2020.
+        </p>
+      </div>
+      
       <div class="spots-box">
-        <div class="spot1">Spotlight 1</div>
-        <div class="spot2">Spotlight 2</div>
+        <div class="spot1">
+          <h2>MG Transport</h2>
+          <h3>Transportation of Goods and Parcels</h3>
+          <p>We manage the shipments of your company or online store, so that the experience of your users is optimal.
+            And you take care of your business.
+          </p>
+        </div>
+        
+        <div class="spot2">
+          <h2>Personal</h2>
+          <h3>The Best Internet Service!</h3>
+          <p>We continue to evolve to transform the digital experience of our customers by offering them a secure,
+            flexible and dynamic service. We guarantee high-speed fixed and mobile connections, to access from any
+            device.
+          </p>
+        </div>
+        
+        
         <div class="spot3">Spotlight 3</div>
       </div>
     </main>
@@ -110,7 +159,6 @@
       </div>
       <div id="footer-main-box2">
         <hr>
-        <!--<a href="../index.html"><img src="images/return_arrow.jpg" alt="return" title="Return to the home page"></a>-->
         <p>&copy; <span id="year"></span>
           Balcarce Chamber of Commerce - C. Ezequiel Iannone - WDD 230 Project - <span id="updated-date"></span>
         </p>
