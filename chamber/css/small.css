@@ -201,6 +201,10 @@ main div {
   /*min-width: 200px;*/
   padding: .2rem; /*ver si con este padding evito poner padding en cada div*/
 }
+/*
+main p {
+  /*font-size: 8rem;
+}*/
 /*************************************************/
 .event-box {
   grid-row: 2 / 3;
