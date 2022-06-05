@@ -1,5 +1,5 @@
 /* 64em is also 1028px when basefont is 16px */
-@media only screen and (min-width: 64.8rem) {
+@media only screen and (min-width: 72rem) {
 
   #logo-box img {
     width: 9rem;
@@ -54,6 +54,10 @@
   .join-box {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+  }
+
+  .join-box button {
+    width: 10rem;
   }
 
   .hero-box {

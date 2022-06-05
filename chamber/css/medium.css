@@ -1,9 +1,5 @@
 /* 35rem is also 560px when basefont is 16px */
-@media only screen and (min-width: 51rem) {
-
-  #header-box1 {
-    justify-content: space-evenly;
-  }
+@media only screen and (min-width: 54rem) {
 
   #logo-box img {
     width: 7rem;
@@ -31,7 +27,8 @@
     order: 0;
   }
 
-  nav button, #secondary-nav {
+  nav button,
+  #secondary-nav {
     display: none;
   }
 
@@ -57,26 +54,28 @@
 
   main {
     grid-template-columns: 1fr 1fr 1fr;
-    /*grid-template-rows: 300px 300px 300px 300px 300px;*/
-    /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr;*/
   }
 
   .event-box {
     grid-column: span 2;
     grid-row: 5 / 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .weather-box {
     grid-column: span 1;
     grid-row: 5 / 6;
   }
-
+/*************************************************/
   .join-box {
     display: unset;
     grid-column: span 3;
     grid-row: 4 / 5;
   }
 
+/*************************************************/
   .hero-box {
     grid-column: span 3;
     grid-row: 1 / 2;
@@ -128,10 +127,6 @@
     flex-direction: column;
     justify-content: center;
     text-align: left;
-  }
-
-  #footer-address-box h2, p {
-    margin: 0;
   }
 
   #footer-address-box h2 {
