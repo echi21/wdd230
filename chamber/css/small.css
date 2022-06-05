@@ -298,9 +298,11 @@ main span {
   align-items: center;
 }
 
-#temperature {
+#temperature,
+#temperature-unit p {
   font-size: 2rem;
 }
+
 /*************************************************/
 .join-box {
   display: none;
