@@ -41,6 +41,11 @@
     grid-template-columns: 1fr 2fr 1fr;
   }
 
+  .hero-box {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+
   .event-box {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -58,11 +63,6 @@
 
   .join-box button {
     width: 10rem;
-  }
-
-  .hero-box {
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
   }
 
   .news-box {

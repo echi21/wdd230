@@ -25,7 +25,10 @@
         <div id="logo-title-box">
           <div id="logo-box">
             <a href="../chamber/">
-              <img src="images/chamber3.png" alt="Logo image">
+              <picture>
+                <source srcset="images/chamber-logo.webp">
+                <img src="images/chamber-logo.png" alt="Logo image">
+              </picture>
             </a>
           </div>
           <div id="title-box">
@@ -69,13 +72,15 @@
     <main>
   
       <div class="hero-box">
-        <!--<picture class="photo-a">
-          <source media="(max-width: 200px)" srcset="images/hero-300-90.jpg">
-          <source media="(max-width: 500px)" srcset="images/hero-600-90.jpg">
-          <img src="images/hero-554-90.jpg" alt="People gathered in a meeting">
-        </picture>-->
-        
-        <!--<img src="images/wdd230-org.webp" alt="People gathered in a meeting">-->
+
+        <h2>Welcome to Balcarce</h2>
+        <picture class="photo-a">
+          <source media="(max-width: 500px)" srcset="images/hero-400x267x100.webp">
+          <source media="(max-width: 850px)" srcset="images/hero-800x533x70.webp">
+          <source media="(max-width: 1152px)" srcset="images/hero-1280x853x70.webp">
+          <img src="images/hero-1280x853.jpg" alt="People gathered in a meeting">
+        </picture>
+        <button class="styling-button">Join the Chamber</button>
       </div>
       
       
@@ -93,7 +98,10 @@
       <div class="weather-box">
         <h2>Weather</h2>
         <div class="wind-speed-box">
-          <img src="images/weather.webp" alt="">
+          <picture>
+            <source srcset="images/weather.webp">
+            <img src="images/weather.jpg" alt="Weather">
+          </picture>
           <span id="temperature">1°C</span>
         </div>
         <p id="weather-comment"><strong>Very Cold</strong></p>
@@ -108,7 +116,7 @@
       
       
       <div class="join-box">
-        <button>Join Us</button>
+        <button class="styling-button">Join Us</button>
         <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
       </div>
       
@@ -157,7 +165,10 @@
       <div id="footer-main-box1">
         <div id="footer-logo-address-box">
           <div id="footer-logo-box">
-            <img src="images/chamber3.png" alt="Logo image">
+            <picture>
+              <source srcset="images/chamber-logo.webp">
+              <img src="images/chamber-logo.png" alt="Logo image">
+            </picture>
           </div>
           <div id="footer-address-box">
             <h2>Balcarce Chamber of Commerce</h2>

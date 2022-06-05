@@ -227,6 +227,43 @@ main span {
   font-size: 1.1rem;
 }
 /*************************************************/
+.hero-box {
+  grid-row: 1 / 2;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.hero-box img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-box h2 {
+  position: absolute;
+  font-size: 1.6rem;
+  top: 20px;
+  left: 4px;
+  /*line-height: 1em;*/
+  color: white;
+  background-color: transparent;
+  /*transform: translate(-50%, 20px);*/
+  text-shadow: 0 0 10px black;
+}
+
+
+.hero-box button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: .2rem;
+  font-size: 1.6rem;
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
+  border-radius: .5rem;
+}
+/*************************************************/
 .event-box {
   grid-row: 2 / 3;
 }
@@ -279,28 +316,19 @@ main span {
   border-radius: .5rem;
 }
 
-.join-box button:hover {
+.styling-button:hover {
   color: var(--accent4-color);
   box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.24);
   cursor: pointer;
 }
 
-.join-box button:active {
+.styling-button:active {
   color: var(--accent2-color);
   transform: translateY(.2rem);
 }
 
 .join-box p {
   margin-top: .5rem;
-}
-/*************************************************/
-.hero-box {
-  grid-row: 1 / 2;
-}
-
-.hero-box img {
-  width: 100%;
-  object-fit: cover;
 }
 /*************************************************/
 .news-box {
