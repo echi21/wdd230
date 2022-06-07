@@ -10,12 +10,6 @@ body {
   font-size: 16px;
 }
 
-main {
-  margin: 0 auto;
-  padding: 2rem;
-  /*background-color: lightgray;*/
-}
-
 h1 {
   text-align: center;
   font-size: 1.6rem;
@@ -24,8 +18,8 @@ h1 {
   padding: 2rem;
 }
 
-picture {
-  margin: 2rem;
+div {
+  margin: 0 auto;
 }
 
 /*We render the images with a blur at the beginning, so a transition to the sharp one can be achieved:*/
@@ -34,12 +28,15 @@ img[data-src] {
 }
 
 img {
-  background: #B3DEB6;
   display: block;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 60%;
+  padding: 1rem;
+  margin: 2rem auto;
+  
+
+  background: #B3DEB6;
   filter: blur(0em);
-  transition: filter 2s;
+  transition: filter 1s;
   /*This will remove the blur effect within half a second, which looks good enough for the "loading" effect.*/
 }
 
@@ -48,4 +45,11 @@ footer {
   background-color: #B3DEB6;
   font-size: 1.2rem;
   padding: 2rem;
+}
+
+@media only screen and (min-width: 32rem) {
+  img {
+    width: initial;
+    padding: 2rem;
+  }
 }
