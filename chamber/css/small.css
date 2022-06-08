@@ -210,7 +210,8 @@ main div {
 
 main h2 {
   text-align: center;
-  text-shadow: 0 0 10px grey;
+  /*text-shadow: 0 0 10px grey;*/
+  text-shadow: 0 0 3px gray;
 }
 
 main hr {
@@ -245,11 +246,10 @@ main span {
   font-size: 1.6rem;
   top: 20px;
   left: 4px;
-  /*line-height: 1em;*/
-  color: white;
+  color: var(--accent4-color);
   background-color: transparent;
-  /*transform: translate(-50%, 20px);*/
   text-shadow: 0 0 10px black;
+  text-decoration-line: underline;
 }
 
 
@@ -257,7 +257,7 @@ main span {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  padding: .2rem;
+  padding: .5rem;
   font-size: 1.6rem;
   background-color: var(--secondary-color);
   color: var(--accent2-color);
@@ -363,6 +363,29 @@ main span {
 .spot3 {
   display: none;
 }
+/*************************************************/
+.card {
+  width: 320px;
+  margin-bottom: 4rem;
+  border-radius: 1rem; /*So 3px 0 0 3px would curve the top-left and bottom-left corner for example.*/
+  box-shadow: 1px 1px 4px 1px #888;
+  background-color: white;
+  font-family: "Arial", sans-serif;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card p {
+  margin-top: 10px;
+  margin-left: 16px;
+  margin-bottom: 10px;
+}
+
+
+
 /*************************************************/
 footer {
   background-color: var(--secondary-color);
