@@ -1,0 +1,25 @@
+/*HTML selectors*/
+
+@media only screen and (min-width: 62em) {
+
+  thead tr:nth-child(1) th {
+    font-size: 3rem;
+  }
+
+  tfoot tr th {
+    font-size: 1.2rem;
+  }
+
+  th, td {
+    padding: .5rem 1rem;
+  }
+
+  th {
+    font-size: 1.8rem;
+  }
+
+  td {
+    font-size: 1.4rem;
+  }
+
+}

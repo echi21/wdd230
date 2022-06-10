@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="icon" href="favicon3-48x48.ico">
+    <title>Lesson 7 - Ezequiel Iannone</title>
+    <meta name="author" content="Ezequiel Iannone">
+    <meta name="description" content="This is a simple project as part of learning to apply a website planning document.
+      In this case, this file expresses appropriated font styles that will be used in a final project.">
+    <script src="js/scripts.js" defer></script>
+    <script src="js/windchill.js" defer></script>
+  </head>
+  <body>
+    <div class="banner">&#129309;<span>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>
+    </div>
+    <header>
+      <div id="header-box1">
+        <div id="logo-title-box">
+          <div id="logo-box">
+            <a href="../chamber/">
+              <picture>
+                <source srcset="images/chamber-logo.webp">
+                <img src="images/chamber-logo.png" alt="Logo image">
+              </picture>
+            </a>
+          </div>
+          <div id="title-box">
+            <h1>Balcarce</h1>
+            <p>Chamber of Commerce</p>
+          </div>
+        </div>
+        <nav>
+          <button id="hamburger-btn"><span>&#9776;</span><span>X</span></button>
+          <ul id="primary-nav">
+            <li class="active"><a href="../chamber/">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="social-box">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook-circle-64x64.png" alt="return">
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img src="images/linkedin-circle-64x64.png" alt="return">
+          </a>
+        </div>
+      </div>
+      <nav>
+        <ul id="secondary-nav">
+          <li class="active"><a href="../chamber/">Home</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="header-box2">
+        <span id="current-date"></span>
+      </div>
+    </header>
+    
+    <main>
+      
+      
+      
+      
+      
+      <div class="card">
+        <img src="images/500/plazoleta500.webp" alt="">
+        <p><?php echo $nombre ?></p>
+        <p>US$ <?php echo number_format($precio, 2) ?></p>
+        <!--<button class="details-button">Details</button>-->
+      </div>
+      
+      <div class="card">
+        <img src="images/500/plaza-libertad500.webp" alt="">
+        <p><?php echo $nombre ?></p>
+        <p>US$ <?php echo number_format($precio, 2) ?></p>
+        <!--<button class="details-button">Details</button>-->
+      </div>
+      
+      <div class="card">
+        <img src="images/500/laguna-la-brava500.webp" alt="">
+        <p><?php echo $nombre ?></p>
+        <p>US$ <?php echo number_format($precio, 2) ?></p>
+        <!--<button class="details-button">Details</button>-->
+      </div>
+      
+      <div class="card">
+        <img src="images/500/museo2500.webp" alt="">
+        <p><?php echo $nombre ?></p>
+        <p>US$ <?php echo number_format($precio, 2) ?></p>
+        <!--<button class="details-button">Details</button>-->
+      </div>
+      
+      <div class="card">
+        <img src="images/500/autodromo500.webp" alt="">
+        <p><?php echo $nombre ?></p>
+        <p>US$ <?php echo number_format($precio, 2) ?></p>
+        <!--<button class="details-button">Details</button>-->
+      </div>
+      
+      <div class="card">
+        <img src="images/500/cerro500.webp" alt="">
+        <p><?php echo $nombre ?></p>
+        <p>US$ <?php echo number_format($precio, 2) ?></p>
+        <!--<button class="details-button">Details</button>-->
+      </div>
+  
+      <div class="card">
+        <img src="images/500/laguna-la-brava500.webp" alt="">
+        <p><?php echo $nombre ?></p>
+        <p>US$ <?php echo number_format($precio, 2) ?></p>
+        <!--<button class="details-button">Details</button>-->
+      </div>
+     
+      
+     <!--
+      <div class="hero-box">
+
+        <h2>Welcome to Balcarce</h2>
+        <picture class="photo-a">
+          <source media="(max-width: 500px)" srcset="images/hero-400x267x100.webp">
+          <source media="(max-width: 850px)" srcset="images/hero-800x533x70.webp">
+          <source media="(max-width: 1152px)" srcset="images/hero-1280x853x70.webp">
+          <img src="images/hero-1280x853.jpg" alt="People gathered in a meeting">
+        </picture>
+        <button class="styling-button">Join the Chamber</button>
+      </div>
+      
+      
+      <div class="event-box">
+        <h2>&#127895; Ribbon Cutting Ceremony</h2>
+        <h3>The Central Hospital "Dr. Ramón Carrillo"</h3>
+        <p>
+          The highest investment in the province.
+          <a href="https://www.argentina.gob.ar/noticias/se-inauguro-el-hospital-central-dr-ramon-carrillo-de-san-luis">
+            More info...</a>
+        </p>
+      </div>
+      
+      
+      <div class="weather-box">
+        <h2>Weather</h2>
+        <div  id="temperature-unit" class="wind-speed-box">
+          <picture>
+            <source srcset="images/weather.webp">
+            <img src="images/weather.jpg" alt="Weather">
+          </picture>
+          <p><span id="temperature">1</span>°C</p>
+        </div>
+        <p id="weather-comment"><strong>Very Cold</strong></p>
+        <hr>
+        <div class="wind-speed-box">
+          <p>Wind Speed:</p><span id="wind-speed">8</span><p> km/h</p>
+        </div>
+        <div class="wind-speed-box">
+          <p>Wind Chill:</p><span id="wind-chill"></span><p>°C</p>
+        </div>
+      </div>
+      
+      
+      <div class="join-box">
+        <button class="styling-button">Join Us</button>
+        <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+      </div>
+      
+      
+      <div class="news-box">
+        <h2>News Release</h2>
+        <p>An analysis by the Argentine Chamber of Commerce and Services (CAC) shows that, in 2021, the commercial
+          exchange between Argentina and Ecuador was 872 million dollars, 61.2% higher than in 2020. In this way,
+          bilateral trade returned to growing after two consecutive years of decline, reaching its highest historical
+          level by exceeding the previous record of 2018 of 725 million dollars by 12.7%.
+        </p>
+      </div>
+      
+      
+      <div class="spots-box">
+        <div class="spot1">
+          <h2>&#9951; MG Transport </h2>
+          <h3>Transportation of Goods and Parcels</h3>
+          <hr>
+          <p>mardelplata@mgpostal.com<br>+54 02266-431339<br>
+            <a href="https://mgpostal.com/" target="_blank">Website.</a>
+          </p>
+        </div>
+        
+        <div class="spot2">
+          <h2>Personal &#127760;</h2>
+          <h3>The Best Internet Service!</h3>
+          <hr>
+          <p><a href="https://www.facebook.com/personalflowayuda">Facebook account</a><br>+54 0800 555 3569<br>
+            <a href="https://www.personal.com.ar/" target="_blank">Website.</a>
+          </p>
+        </div>
+        
+        <div class="spot3">
+          <h2>BYU-Pathway Worldwide</h2>
+          <h3>Online Degrees - Affordable Price</h3>
+          <hr>
+          <p><a href="https://www.byupathway.org/help/contact-us">Contact us here</a> or visit our<br>
+            <a href="https://www.byupathway.org/" target="_blank">Website.</a>
+          </p>
+        </div>
+      </div>
+      -->
+      
+      
+      
+      
+      
+    </main>
+    <footer>
+      <div id="footer-main-box1">
+        <div id="footer-logo-address-box">
+          <div id="footer-logo-box">
+            <picture>
+              <source srcset="images/chamber-logo.webp">
+              <img src="images/chamber-logo.png" alt="Logo image">
+            </picture>
+          </div>
+          <div id="footer-address-box">
+            <h2>Balcarce Chamber of Commerce</h2>
+            <p>Street 20 #696</p>
+            <p>Balcarce, Buenos Aires</p>
+          </div>
+        </div>
+        <hr id="footer-first-hr">
+        <div id="footer-email-box">
+          <p>yourchamber@balcarce.com</p>
+          <p>801-937-9702</p>
+          <p>
+            <a href="https://goo.gl/maps/x6iPCbz1PKaGqkwe8" target="_blank"><span>&#x1F5FA;</span> Location Map</a>
+          </p>
+        </div>
+      </div>
+      <div id="footer-main-box2">
+        <hr>
+        <p>&copy; <span id="year"></span>
+          Balcarce Chamber of Commerce - C. Ezequiel Iannone - WDD 230 Project - <span id="updated-date"></span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+/*HTML Selectors*/
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: white;
+  --secondary-color: #B3DEB6;
+  --accent1-color: #2B473E;
+  --accent2-color: #228b22;
+
+  --table-font: "Ubuntu", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--primary-color);
+}
+
+body {
+  font-family: var(--table-font);
+  font-size: 16px;
+}
+
+
+table {
+  margin: 4rem auto;
+  border-collapse: collapse;
+  border: 2px black solid;
+  text-align: center;
+}
+
+thead tr:nth-child(1) th {
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+  font-size: 1.6rem;
+}
+
+tfoot tr th {
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+  font-size: .8rem;
+}
+
+th, td {
+  border: 1px black solid;
+  padding: .5rem .3rem;
+}
+
+th {
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+td {
+  font-size: 1rem;
+}
+
+tbody tr:nth-child(4) td:nth-child(3) {
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+}
+
+tr:nth-child(odd) td {
+  background-color: var(--secondary-color);
+}

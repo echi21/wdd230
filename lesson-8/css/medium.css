@@ -1,0 +1,24 @@
+
+@media only screen and (min-width: 32rem) {
+
+  thead tr:nth-child(1) th {
+    font-size: 2rem;
+  }
+
+  tfoot tr th {
+    font-size: .9rem;
+  }
+
+  th, td {
+    padding: .5rem 1rem;
+  }
+
+  th {
+    font-size: 1.2rem;
+  }
+
+  td {
+    font-size: 1.2rem;
+  }
+
+}
