@@ -52,16 +52,16 @@
   }
   /*******************************************************************************************************************/
 
-  main {
+  #index-main-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .hero-box {
+  #hero-box {
     grid-column: span 3;
     grid-row: 1 / 2;
   }
 
-  .hero-box h2 {
+  #hero-box h2 {
     font-size: 2rem;
     top: 50px;
     left: 40px;
@@ -69,7 +69,7 @@
 
   /*********************************************************/
 
-  .event-box {
+  #event-box {
     grid-column: span 2;
     grid-row: 5 / 6;
     display: flex;
@@ -77,38 +77,48 @@
     justify-content: center;
   }
 
-  .weather-box {
+  #weather-box {
     grid-column: span 1;
     grid-row: 5 / 6;
   }
 /*************************************************/
-  .join-box {
+  #join-box {
     display: unset;
     grid-column: span 3;
     grid-row: 4 / 5;
   }
 
 /*************************************************/
-  .news-box {
+  #news-box {
     grid-column: span 3;
     grid-row: 2 / 3;
   }
 
-  .spots-box {
+  #spots-box {
     grid-column: span 3;
     grid-row: 3 / 4;
     grid-template-columns: 1fr 1fr;
   }
 
-  .spot1 {
+  #spot1 {
     grid-column: 1 / 2;
     grid-row: unset;
   }
 
-  .spot2 {
+  #spot2 {
     grid-column: 2 / 3;
     grid-row: unset;
   }
+
+
+
+
+  /*----------- FORM --------------*/
+  form label.sbs {
+    padding: .4rem 0;
+  }
+
+
 
   /*******************************************************************************************************************/
 

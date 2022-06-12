@@ -11,10 +11,9 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="icon" href="favicon3-48x48.ico">
-    <title>Lesson 7 - Ezequiel Iannone</title>
+    <title>Lesson 8 - Ezequiel Iannone</title>
     <meta name="author" content="Ezequiel Iannone">
-    <meta name="description" content="This is a simple project as part of learning to apply a website planning document.
-      In this case, this file expresses appropriated font styles that will be used in a final project.">
+    <meta name="description" content="This is one of the pages to let the user join the community.">
     <script src="js/scripts.js" defer></script>
   </head>
   <body>
@@ -42,7 +41,7 @@
             <li class="active"><a href="../chamber/">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="#">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
+            <li><a href="#">Join</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
@@ -58,9 +57,9 @@
       <nav>
         <ul id="secondary-nav">
           <li class="active"><a href="../chamber/">Home</a></li>
-          <li><a href="discover.html">Discover</a></li>
+          <li><a href="#">Discover</a></li>
           <li><a href="#">Directory</a></li>
-          <li><a href="join.html">Join</a></li>
+          <li><a href="#">Join</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
@@ -69,57 +68,81 @@
       </div>
     </header>
     
-    <main id="discover-main-grid">
+    <main id="join-main">
       
-        
-        <div class="card">
-          <img src="images/500/plazoleta500.webp" alt="">
-          <p><?php echo $nombre ?></p>
-          <p>US$ <?php echo number_format($precio, 2) ?></p>
-          <!--<button class="details-button">Details</button>-->
-        </div>
-        
-        <div class="card">
-          <img src="images/500/plaza-libertad500.webp" alt="">
-          <p><?php echo $nombre ?></p>
-          <p>US$ <?php echo number_format($precio, 2) ?></p>
-          <!--<button class="details-button">Details</button>-->
-        </div>
-        
-        <div class="card">
-          <img src="images/500/museo500.webp" alt="">
-          <p><?php echo $nombre ?></p>
-          <p>US$ <?php echo number_format($precio, 2) ?></p>
-          <!--<button class="details-button">Details</button>-->
-        </div>
-        
-        <div class="card">
-          <img src="images/500/museo2500.webp" alt="">
-          <p><?php echo $nombre ?></p>
-          <p>US$ <?php echo number_format($precio, 2) ?></p>
-          <!--<button class="details-button">Details</button>-->
-        </div>
-        
-        <div class="card">
-          <img src="images/500/autodromo500.webp" alt="">
-          <p><?php echo $nombre ?></p>
-          <p>US$ <?php echo number_format($precio, 2) ?></p>
-          <!--<button class="details-button">Details</button>-->
-        </div>
-        
-        <div class="card">
-          <img src="images/500/cerro500.webp" alt="">
-          <p><?php echo $nombre ?></p>
-          <p>US$ <?php echo number_format($precio, 2) ?></p>
-          <!--<button class="details-button">Details</button>-->
-        </div>
+      <h2>We would love for you to be part of our community</h2>
+      <p>Just fill out the form, and we will contact you as soon as possible.</p>
+      
+      <form action="thank-you.html" method="get">
     
-        <div class="card">
-          <img src="images/500/laguna-la-brava500.webp" alt="">
-          <p><?php echo $nombre ?></p>
-          <p>US$ <?php echo number_format($precio, 2) ?></p>
-          <!--<button class="details-button">Details</button>-->
-        </div>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="first-name" class="top">First Name*
+            <input type="text" name="first-name" id="first-name" required>
+          </label>
+          
+          <label for="last-name" class="top">Last Name*
+            <input type="text" name="last-name" id="last-name" required>
+          </label>
+  
+          <label class="top">Email*
+            <input type="email" name="email" placeholder="your-email@gmail.com" required>
+          </label>
+  
+          <label class="top">Cell Phone / Phone*
+            <input type="tel" name="phone" placeholder="e.g.1235551234" required>
+          </label>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Business Information</legend>
+          <label  for="business-name" class="top">Business Name*
+            <input type="text" name="business-name" id="business-name" required>
+          </label>
+  
+          <label class="top">Business Position
+            <input type="text" name="business-position" pattern="[A-Za-z\s\-]+" minlength="7">
+          </label>
+  
+          <label for="description-text-area" class="label-textarea">Business Description
+            <textarea id="description-text-area" name="business-description"
+                      placeholder="Describe briefly your business..." cols="36" rows="10" maxlength="500">
+            </textarea>
+          </label>
+          <p>(maximum number of characters: 400)</p>
+        </fieldset>
+        
+        <fieldset id="membership-box">
+          <legend>Membership Choices</legend>
+          <div id="labels">
+            <label class="choices"><input type="radio" name="user" value="basic"> NP Membership</label>
+            <label class="choices"><input type="radio" name="user" value="intermediate"> Bronze Membership.</label>
+            <label class="choices"><input type="radio" name="user" value="advanced"> Silver Membership</label>
+            <label class="choices"><input type="radio" name="user" value="advanced"> Gold Membership</label>
+          </div>
+          <div>
+            <h3>Membership Benefits</h3>
+            <span id="benefits"></span>
+            
+            
+          </div>
+         
+        </fieldset>
+    
+        <input type="submit" value="Join the community" class="submit-btn">
+      </form>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
     </main>
     <footer>
