@@ -41,7 +41,7 @@
             <li class="active"><a href="../chamber/">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
+            <li><a href="join.html">Join</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
@@ -57,9 +57,9 @@
       <nav>
         <ul id="secondary-nav">
           <li class="active"><a href="../chamber/">Home</a></li>
-          <li><a href="#">Discover</a></li>
+          <li><a href="discover.html">Discover</a></li>
           <li><a href="#">Directory</a></li>
-          <li><a href="#">Join</a></li>
+          <li><a href="join.html">Join</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
@@ -109,40 +109,39 @@
                       placeholder="Describe briefly your business..." cols="36" rows="10" maxlength="500">
             </textarea>
           </label>
-          <p>(maximum number of characters: 400)</p>
         </fieldset>
         
         <fieldset id="membership-box">
           <legend>Membership Choices</legend>
           <div id="labels">
-            <label class="choices"><input type="radio" name="user" value="basic"> NP Membership</label>
-            <label class="choices"><input type="radio" name="user" value="intermediate"> Bronze Membership.</label>
-            <label class="choices"><input type="radio" name="user" value="advanced"> Silver Membership</label>
-            <label class="choices"><input type="radio" name="user" value="advanced"> Gold Membership</label>
+            <label class="choices">
+              <input class="radios" type="radio" name="member" value="np">
+              NP Membership
+            </label>
+            <label class="choices">
+              <input class="radios" type="radio" name="member" value="bm">
+              Bronze Membership
+            </label>
+            <label class="choices">
+              <input class="radios" type="radio" name="member" value="sm">
+              Silver Membership
+            </label>
+            <label class="choices">
+              <input class="radios" type="radio" name="member" value="gm">
+              Gold Membership
+            </label>
+            <label id="date-time">
+              <input type="hidden" name="full-date">
+            </label>
           </div>
           <div>
-            <h3>Membership Benefits</h3>
+            <h3>Prices and Benefits</h3>
             <span id="benefits"></span>
-            
-            
           </div>
-         
         </fieldset>
     
         <input type="submit" value="Join the community" class="submit-btn">
       </form>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
       
     </main>
     <footer>
