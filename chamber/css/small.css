@@ -474,7 +474,7 @@ form label.top input:required:valid {
 }
 
 #description-text-area {
-  width: 30rem;
+  max-width: 30rem;
   height: 12rem;
   margin-top: .1rem;
   padding: 1rem;
@@ -482,10 +482,16 @@ form label.top input:required:valid {
 }
 
 #membership-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
 }
+
+#membership-box h3 {
+  text-align: center;
+}
+
+
 
 form input.submit-btn {
   border: none;

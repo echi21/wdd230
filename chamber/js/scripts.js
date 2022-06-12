@@ -89,6 +89,7 @@ Array.from(radiosElements).forEach(radio => {
     }
   })
 });
+benefits.style.setProperty("text-align", "center");
 /*********************************************************************************************************************/
 const formSubmittedTime = document.getElementById("date-time");
 const submitButton = document.querySelector(".submit-btn");
