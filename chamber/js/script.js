@@ -1,4 +1,45 @@
+/*********************************************************************************************************************/
+/**
+ * If this block of code is in any other place inside this file, it does not work. It needs to be at the beginning.
+ */
+// get all the img with data-src attribute
+let imagesToLoad = document.querySelectorAll('img[data-src]');
 
+// optional parameters being set for the IntersectionalObserver
+const imgOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px -30% 0px"
+};
+
+const loadImages = (image) => {
+  image.setAttribute('src', image.getAttribute('data-src'));
+  image.onload = () => {
+    image.removeAttribute('data-src');
+  };
+};
+
+// first check to see if Intersection Observer is supported
+if('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+      if(item.isIntersecting) {
+        loadImages(item.target);
+        observer.unobserve(item.target);
+      }
+    });
+  }, imgOptions);
+
+  // loop through each img and check status and load if necessary
+  imagesToLoad.forEach((img) => {
+    observer.observe(img);
+  });
+} else { // just load all images if not supported...
+  imagesToLoad.forEach((img) => {
+    loadImages(img);
+  });
+}
+
+/*********************************************************************************************************************/
 const dayNames = [
   "Sunday",
   "Monday",
@@ -32,7 +73,7 @@ const year = currentDate.getFullYear();
 const numberDay = currentDate.getDate();
 
 document.getElementById("current-date").textContent = `${dayName}, ${numberDay} ${monthName}, ${year}`;
-/********************************************************************************************************************/
+/*********************************************************************************************************************/
 
 // Displays a banner on Mondays or Tuesdays only at the very top of the page
 let banner = document.querySelector(".banner");
@@ -89,15 +130,55 @@ Array.from(radiosElements).forEach(radio => {
     }
   })
 });
-benefits.style.setProperty("text-align", "center");
+//benefits.style.setProperty("text-align", "center");
 /*********************************************************************************************************************/
 const formSubmittedTime = document.getElementById("date-time");
-const submitButton = document.querySelector(".submit-btn");
+const submitButton = document.querySelector("#submit-btn");
 
 submitButton.addEventListener("click", () => {
   formSubmittedTime.innerText = `${currentDate}`;
   console.log(formSubmittedTime.innerText);
 });
+
+/*********************************************************************************************************************/
+
+// initialize display elements
+const todayDisplay = document.querySelector(".today");
+const visitsDisplay = document.querySelector(".visits");
+
+// get the stored value in localStorage
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
+
+// determine if this is the first visit or display the number of visits.
+if (numVisits !== 0) {
+  visitsDisplay.textContent = numVisits.toString();
+} else {
+  visitsDisplay.textContent = `This is your first visit!`;
+}
+
+// increment the number of visits.
+
+// how should this be improved?
+numVisits++;
+// store the new number of visits value
+localStorage.setItem("visits-ls", numVisits.toString());
+
+// show today's date.
+todayDisplay.textContent = Date.now().toString();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*********************************************************************************************************************/

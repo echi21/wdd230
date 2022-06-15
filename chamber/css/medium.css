@@ -109,6 +109,18 @@
     grid-column: 2 / 3;
     grid-row: unset;
   }
+/*-----------------DISCOVER.HTML-----------------*/
+
+  #discover-main-grid {
+    grid-template-columns: 1fr 2fr;
+
+  }
+
+
+
+
+
+
 
 
   /*----------- FORM --------------*/
