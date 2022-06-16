@@ -132,54 +132,62 @@ Array.from(radiosElements).forEach(radio => {
 });
 //benefits.style.setProperty("text-align", "center");
 /*********************************************************************************************************************/
+/*
 const formSubmittedTime = document.getElementById("date-time");
 const submitButton = document.querySelector("#submit-btn");
 
 submitButton.addEventListener("click", () => {
   formSubmittedTime.innerText = `${currentDate}`;
   console.log(formSubmittedTime.innerText);
-});
+});*/
 
 /*********************************************************************************************************************/
 
 // initialize display elements
-const todayDisplay = document.querySelector(".today");
-const visitsDisplay = document.querySelector(".visits");
+const numVisitsID = document.getElementById("numb-visits-id");
+const timeBetweenId = document.getElementById("time-between-id");
 
-// get the stored value in localStorage
-let numVisits = Number(window.localStorage.getItem("visits-ls"));
-
-// determine if this is the first visit or display the number of visits.
-if (numVisits !== 0) {
-  visitsDisplay.textContent = numVisits.toString();
-} else {
-  visitsDisplay.textContent = `This is your first visit!`;
+const calculateNumberOfVisits = () => {
+  // gets the value associated with that key and parse it into a number.
+  let value = Number(window.localStorage.getItem("discoverVisitsLs"));
+  value++;
+  // sets the new value in the same key stored in localStorage.
+  window.localStorage.setItem("discoverVisitsLs",value.toString());
+  // sets the value in the span element.
+  numVisitsID.textContent = value.toString();
 }
 
-// increment the number of visits.
+// if the item discoverVisits exists in the localStorage...
+if (window.localStorage.getItem("discoverVisitsLs")) {
+  // calls the previous arrow function.
+  calculateNumberOfVisits();
+} else {
+  // if it doesn't exist, it creates it with an initial value of 1. Then sets a message in the span element
+  window.localStorage.setItem("discoverVisitsLs", "1");
+  numVisitsID.textContent = `This is your first visit!`;
+}
+/*********************************************************************************************************************/
 
-// how should this be improved?
-numVisits++;
-// store the new number of visits value
-localStorage.setItem("visits-ls", numVisits.toString());
+// one day is equal to 86400000 milliseconds
+const currentDateMilli = Date.now();
 
-// show today's date.
-todayDisplay.textContent = Date.now().toString();
+const calculateLastVisitDay = () => {
+  // gets the value associated with that key and parse it into a number.
+  const storedDateMilli = Number(window.localStorage.getItem("timeStampLs"));
+  const daysSinceVisits = Math.round((currentDateMilli - storedDateMilli) / 86400000);
+  timeBetweenId.textContent = daysSinceVisits.toString();
+  window.localStorage.setItem("timeStampLs",currentDateMilli.toString());
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// if the item timeStampLs exists in the localStorage...
+if (window.localStorage.getItem("timeStampLs")) {
+  // calls the previous arrow function.
+  calculateLastVisitDay();
+} else {
+  // if it doesn't exist, it creates it with a default value. Then sets a message in the span element.
+  window.localStorage.setItem("timeStampLs", currentDateMilli.toString());
+  timeBetweenId.textContent = "0";
+}
 
 /*********************************************************************************************************************/
 // gets the first span tag and sets the year.

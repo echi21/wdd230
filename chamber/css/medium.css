@@ -123,9 +123,11 @@
     text-align: left;
   }
 
-
-
-
+  .card:hover,
+  #census:hover,
+  #climate-table:hover {
+    transform: rotate(-2deg);
+  }
 
   /*----------- FORM --------------*/
 

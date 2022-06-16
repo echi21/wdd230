@@ -382,7 +382,6 @@ nav ul li.active {
   padding: .5rem;
   display: grid;
   grid-template-columns: 1fr;
-  /*grid-gap: 1rem;*/
   justify-content: center;
   border: 1px solid var(--accent1-color);
   background-color: var(--primary-color);
@@ -449,7 +448,8 @@ nav ul li.active {
   padding: .2rem;
 }
 
-#statistics .statistics-parag p {
+#statistics .statistics-paragraph p,
+#statistics .statistics-paragraph span {
   margin-left: 2rem;
   padding: .2rem;
 }
@@ -473,8 +473,6 @@ nav ul li.active {
   display: block;
   margin: 0 auto;
 }
-
-
 
 /*--------------------JOIN.HTML------------------*/
 #join-main {
