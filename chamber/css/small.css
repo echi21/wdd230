@@ -35,7 +35,6 @@ body {
   margin: 0 auto;
   font-size: 16px;
   background-color: var(--accent4-color);
-
 }
 
 header {
@@ -378,28 +377,19 @@ nav ul li.active {
 /*-----------------DISCOVER.HTML-----------------*/
 
 #discover-main-grid {
-  width: 90%;
+  width: 100%;
   margin: 1rem auto;
+  padding: .5rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1rem;
+  /*grid-gap: 1rem;*/
   justify-content: center;
   border: 1px solid var(--accent1-color);
   background-color: var(--primary-color);
   box-shadow: 1px 1px 10px grey;
 }
 
-.tables img {
-  width: 80%;
-  display: block;
-  margin: 0 auto;
-}
-
-#climate-table img {
-  width: 100%;
-}
-
-#discover-main-grid div {
+#discover-main-grid div  {
   border: 1px solid var(--accent1-color);
   background-color: var(--primary-color);
   box-shadow: 1px 1px 10px grey;
@@ -407,33 +397,12 @@ nav ul li.active {
   margin: .5rem;
 }
 
-#main-title {
-  font-size: 2rem;
-  padding-left: 2rem;
-}
-
-#images-column h3 {
-  text-align: center;
-}
-
-#discover-main-grid p {
-  padding: .8rem;
-}
-
-#images-column {
-  padding: .5rem;
-}
-
-#discover-main-grid #images-column {
-  margin: 0 auto;
-}
-
-.card {
+#images-column .card {
   max-width: 400px;
   margin: 1rem auto;
   background-color: white;
   font-family: "Arial", sans-serif;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 /*-----------------lazy-load-effect------------------*/
@@ -448,28 +417,64 @@ nav ul li.active {
   padding: .5rem;
   filter: blur(0em);
   transition: filter 1s;
-  /*This will remove the blur effect within half a second, which looks good enough for the "loading" effect.*/
+  /*This will remove the blur effect within a second, which looks good enough for the "loading" effect.*/
 }
 
-#census, #rural {
-  margin: 0 auto;
-  padding: 1rem;
+#images-column h3 {
+  text-align: center;
 }
 
-#census h2, #rural h2 {
+#images-column p {
+  text-align: center;
+  padding: .2rem;
+}
+
+#statistics #first-div #main-title {
+  padding: .5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#statistics #first-div p {
   padding: 1rem;
   text-align: center;
 }
 
-#census img, #rural img {
+#statistics h2 {
+  padding: 1rem;
+}
+
+#statistics h3 {
+  margin: 0 0 0 1.5rem;
+  padding: .2rem;
+}
+
+#statistics .statistics-parag p {
+  margin-left: 2rem;
+  padding: .2rem;
+}
+
+#climate-table img {
+  width: 100%;
+}
+
+#census {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#census h2 {
+  padding: 1rem;
+  text-align: center;
+}
+
+#census img {
   width: 80%;
   display: block;
   margin: 0 auto;
 }
 
-#rural img {
-  width: 70%;
-}
+
 
 /*--------------------JOIN.HTML------------------*/
 #join-main {

@@ -92,6 +92,12 @@
     grid-row: 3 / 4;
   }
 
+  /*--------------------DISCOVER.HTML--------------------*/
+
+  #discover-main-grid p {
+    font-size: 1.2rem;
+  }
+
 
 
 }

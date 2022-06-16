@@ -109,15 +109,19 @@
     grid-column: 2 / 3;
     grid-row: unset;
   }
-/*-----------------DISCOVER.HTML-----------------*/
 
+/*--------------------DISCOVER.HTML--------------------*/
   #discover-main-grid {
     grid-template-columns: 1fr 2fr;
-
   }
 
+ #discover-main-grid p {
+    font-size: 1.1rem;
+  }
 
-
+  #statistics #first-div p {
+    text-align: left;
+  }
 
 
 
