@@ -1,7 +1,6 @@
 /*********************************************************************************************************************/
-/**
- * If this block of code is in any other place inside this file, it does not work. It needs to be at the beginning.
- */
+//If this block of code is in any other place inside this file, it does not work. It needs to be at the beginning.
+
 // get all the img with data-src attribute
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 
@@ -18,7 +17,7 @@ const loadImages = (image) => {
   };
 };
 
-// first check to see if Intersection Observer is supported
+// first checks to see if Intersection Observer is supported
 if('IntersectionObserver' in window) {
   const observer = new IntersectionObserver((items, observer) => {
     items.forEach((item) => {
@@ -29,7 +28,7 @@ if('IntersectionObserver' in window) {
     });
   }, imgOptions);
 
-  // loop through each img and check status and load if necessary
+  // loops through each img and check status and load if necessary
   imagesToLoad.forEach((img) => {
     observer.observe(img);
   });
@@ -90,104 +89,6 @@ function toggleMenu() {
 
 const x = document.getElementById("hamburger-btn");
 x.onclick = toggleMenu;
-/*********************************************************************************************************************/
-// setting the messages fot the different membership options for the join.html page
-const nonProfit = `This is for non profit organizations and there is no fee. With this option you are welcome to read
-and receive our news through your e-mail address.`;
-
-const bronze = `This is an affordable option for those who want to experiment and not spend too much.
-It has a monthly cost of $100. With it you have the right to receive professional advice for your business,
-and during the month you can receive 3 training sessions, advertising on our site, and new newsletters.`;
-
-const silver = `This is a prominent option for those who want higher profits. It has a monthly cost of $250.
-With it you have the right to receive professional advice for your business 8 hours a day during working days,
-and during the month you can receive 8 training sessions, 10 advertisements on our site, discounts on events,
-4 scheduled access to our golf course, newsletters and much more.`;
-
-const gold = `This is the best option for those who want all the benefits we have in our community. It has a
-monthly cost of $400. With it you have the right to receive professional advice for your business 8 hours a day
-throughout the week, and during the month you can receive all the training that is available, 30 advertisements
-on our site, discounts on events, trips and purchases, free scheduled access to our golf course, credits for
-investment, newsletters and much more.`;
-
-const benefits = document.getElementById("benefits");
-const radiosElements = document.getElementsByClassName("radios");
-Array.from(radiosElements).forEach(radio => {
-  radio.addEventListener("click", () => {
-    switch (radio.getAttribute("value")) {
-      case "np":
-        benefits.innerText = nonProfit;
-        break;
-      case "bm":
-        benefits.innerText = bronze;
-        break;
-      case "sm":
-        benefits.innerText = silver;
-        break;
-      case "gm":
-        benefits.innerText = gold;
-        break;
-    }
-  })
-});
-//benefits.style.setProperty("text-align", "center");
-/*********************************************************************************************************************/
-
-const formSubmittedTime = document.getElementById("date-time");
-const submitButton = document.querySelector("#submit-btn");
-
-submitButton.addEventListener("click", () => {
-  formSubmittedTime.innerText = `${currentDate}`;
-  console.log(formSubmittedTime.innerText);
-});
-
-/*********************************************************************************************************************/
-
-// initialize display elements
-const numVisitsID = document.getElementById("numb-visits-id");
-const timeBetweenId = document.getElementById("time-between-id");
-
-const calculateNumberOfVisits = () => {
-  // gets the value associated with that key and parse it into a number.
-  let value = Number(window.localStorage.getItem("discoverVisitsLs"));
-  value++;
-  // sets the new value in the same key stored in localStorage.
-  window.localStorage.setItem("discoverVisitsLs",value.toString());
-  // sets the value in the span element.
-  numVisitsID.textContent = value.toString();
-}
-
-// if the item discoverVisits exists in the localStorage...
-if (window.localStorage.getItem("discoverVisitsLs")) {
-  // calls the previous arrow function.
-  calculateNumberOfVisits();
-} else {
-  // if it doesn't exist, it creates it with an initial value of 1. Then sets a message in the span element
-  window.localStorage.setItem("discoverVisitsLs", "1");
-  numVisitsID.textContent = `This is your first visit!`;
-}
-/*********************************************************************************************************************/
-
-// one day is equal to 86400000 milliseconds
-const currentDateMilli = Date.now();
-
-const calculateLastVisitDay = () => {
-  // gets the value associated with that key and parse it into a number.
-  const storedDateMilli = Number(window.localStorage.getItem("timeStampLs"));
-  const daysSinceVisits = Math.round((currentDateMilli - storedDateMilli) / 86400000);
-  timeBetweenId.textContent = daysSinceVisits.toString();
-  window.localStorage.setItem("timeStampLs",currentDateMilli.toString());
-}
-
-// if the item timeStampLs exists in the localStorage...
-if (window.localStorage.getItem("timeStampLs")) {
-  // calls the previous arrow function.
-  calculateLastVisitDay();
-} else {
-  // if it doesn't exist, it creates it with a default value. Then sets a message in the span element.
-  window.localStorage.setItem("timeStampLs", currentDateMilli.toString());
-  timeBetweenId.textContent = "0";
-}
 
 /*********************************************************************************************************************/
 // gets the first span tag and sets the year.
