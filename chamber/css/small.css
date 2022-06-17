@@ -329,14 +329,15 @@ nav ul li.active {
 /*------------------.styling-button--------------*/
 #hero-box .styling-button:hover,
 #join-box .styling-button:hover,
-.submit-btn:hover {
+#submit-btn:hover {
   color: var(--accent4-color);
   box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.24);
   cursor: pointer;
 }
 
 #hero-box .styling-button:active,
-#join-box .styling-button:active {
+#join-box .styling-button:active,
+#submit-btn:active {
   color: var(--accent2-color);
   transform: translateY(.2rem);
 }
@@ -559,7 +560,7 @@ form label.top input:required:valid {
   text-align: center;
 }
 
-form input.submit-btn {
+form #submit-btn {
   border: none;
   padding: .5rem 1.5rem;
   margin: 0 0 2rem 0;
