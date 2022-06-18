@@ -139,7 +139,9 @@
 
 /*---------------------DIRECTORY.HTML--------------------*/
 
-
+  #directory-main {
+    width: 80%;
+  }
 
   #directory-main .cards {
     display: grid;

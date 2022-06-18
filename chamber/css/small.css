@@ -594,7 +594,7 @@ form #submit-btn {
 /*---------------------DIRECTORY.HTML--------------------*/
 
 #directory-main {
-  width:80%;
+  width:90%;
   margin: 0 auto;
   text-align: center;
 }
@@ -602,6 +602,11 @@ form #submit-btn {
 #directory-main h2 {
   margin-top: 2rem;
   font-size: 2rem;
+}
+
+#directory-main h3 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
 }
 
 #directory-main p {
@@ -622,7 +627,6 @@ form #submit-btn {
   margin: .5rem auto;
   border: 1px solid gray;
   border-radius: 1rem;
-  /*background-color: #B3DEB6;*/
 }
 
 #directory-main img {
