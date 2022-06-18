@@ -137,25 +137,34 @@
     justify-content: center;
   }
 
-/*---------------------DIRECTORY.HTML--------------------*/
+  /*---------------------DIRECTORY.HTML--------------------*/
 
-  #directory-main {
-    width: 80%;
-  }
-
-  #directory-main .cards {
-    display: grid;
-    margin: 1.8rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 2rem;
+  #directory-main .list {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
   }
 
-  #directory-main section {
+  #directory-main .list section {
     width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
   }
 
+  #directory-main .list h3 {
+    margin: 0;
+    padding-left: 1rem;
+    width: 20%;
+    text-align: left;
+  }
+
+  #directory-main .list p {
+    margin: 0;
+    padding-left: 1rem;
+    width: 20%;
+    text-align: left;
+  }
 
   /*******************************************************************************************************************/
 

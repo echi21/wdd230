@@ -1,7 +1,18 @@
 
 const WEB_ADDRESS = "json/data.json";
-const CARDS = document.querySelector(".cards");
+const CARDS = document.querySelector("#directory-cards");
 let companiesArray = [];
+const gridButton = document.querySelector("#grid-btn");
+const listButton = document.querySelector("#list-btn");
+const display = document.querySelector("#directory-cards");
+
+gridButton.addEventListener("click", () => {
+  display.classList.remove("list");
+});
+
+listButton.addEventListener("click", () => {
+  display.classList.add("list");
+});
 
 /*
 * The result of parsing push event data as JSON, could be anything that can be represented
@@ -13,7 +24,7 @@ function tryingToConvertResponseToJson(response) {
     console.log(jsonResult);
     return jsonResult;
   } else {
-    console.log("Oh no! Something went very WRONG:", response);
+    console.log("Oh no! Something went WRONG:", response);
   }
 }
 
@@ -25,13 +36,19 @@ function renderContent(companiesArray) {
     let p2Element = document.createElement("p");
     let p3Element = document.createElement("p");
     let p4Element = document.createElement("p");
+    let aElement = document.createElement("a");
     let imgElement = document.createElement("img");
 
     h3Element.textContent = company.name;
     p1Element.textContent = company.address;
     p2Element.textContent = company.phoneNumber;
-    p3Element.textContent = company.webAddress;
-    p4Element.textContent = company.membershipLevel;
+    p3Element.textContent = company.membershipLevel;
+
+    aElement.setAttribute("href", company.webAddress);
+    aElement.setAttribute("target", "_blank");
+    aElement.textContent = `Go to Website`;
+    p4Element.appendChild(aElement);
+
     imgElement.setAttribute("src", company.image);
     imgElement.setAttribute("alt", company.name);
 
@@ -51,19 +68,10 @@ function main() {
   fetch(WEB_ADDRESS)
     .then(tryingToConvertResponseToJson)
     .then((jsonResult) => {
+      console.log(jsonResult);
       companiesArray = jsonResult;
-      // console.log(animalsArray);
-      //let ascendingArray = sortByCriterion(companiesArray);
-      // console.log(ascendingArray);
       renderContent(companiesArray);
     });
 }
 
 main();
-
-/*
-// Clears all the <section> elements from the HTML element with an ID of
-function reset() {
-  let parentElement = document.querySelector("#");
-  parentElement.innerHTML = "";
-}*/
