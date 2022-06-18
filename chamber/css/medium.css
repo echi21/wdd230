@@ -137,6 +137,44 @@
     justify-content: center;
   }
 
+/*---------------------DIRECTORY.HTML--------------------*/
+
+
+
+  #directory-main .cards {
+    display: grid;
+    margin: 1.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    justify-content: center;
+    /*align-items: center;*/
+    text-align: center;
+  }
+
+  #directory-main section {
+    width: 100%;
+  }
+
+  #directory-main img {
+    max-width: 250px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   /*******************************************************************************************************************/
 
