@@ -2,20 +2,6 @@
 const WEB_ADDRESS = "json/data.json";
 const CARDS = document.querySelector(".cards");
 let companiesArray = [];
-let id;
-
-/*
-document.querySelector("#zoo").addEventListener("click", () => {
-  id = "#zoo";
-  reset();
-  main();
-});
-
-document.querySelector("#mocky").addEventListener("click", () => {
-  id = "#mocky";
-  reset();
-  main();
-});*/
 
 /*
 * The result of parsing push event data as JSON, could be anything that can be represented
@@ -74,39 +60,10 @@ function main() {
 }
 
 main();
-// Calls the reset function to clear the current content, get the value of the dropdown chosen, sort the Array
-// and renders the new data on the screen.
-/*function sortBy() {
-  reset();
-  let decision = document.querySelector("#sortBy").value;
-  let sortedArray = sortByCriterion(companiesArray, decision);
-  renderContent(sortedArray);
-}
 
-// Clears all the <article> elements from the HTML element with an ID of animals
+/*
+// Clears all the <section> elements from the HTML element with an ID of
 function reset() {
-  let parentElement = document.querySelector("#animals");
+  let parentElement = document.querySelector("#");
   parentElement.innerHTML = "";
-}
-
-function sortByCriterion(animalObjectsArray, decision="animalNameAscending") {
-  const animalNamesArray = animalObjectsArray.map((oneAnimalObject) => oneAnimalObject.name);
-  animalNamesArray.sort();
-  if (decision === "animalNameDescending") {
-    animalNamesArray.reverse();
-  }
-  return createOrdainedArray(animalNamesArray, animalObjectsArray);
-}
-
-function createOrdainedArray(animalNamesArray, animalObjectsArray) {
-  const ordainedArray = [];
-  animalNamesArray.forEach((name) => {
-    animalObjectsArray.forEach((oneAnimalObject) => {
-      if (oneAnimalObject.name === name) {
-        ordainedArray.push(oneAnimalObject);
-      }
-    });
-  });
-  return ordainedArray;
-}
-*/
+}*/
