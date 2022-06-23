@@ -90,6 +90,11 @@ function toggleMenu() {
 const x = document.getElementById("hamburger-btn");
 x.onclick = toggleMenu;
 
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
 /*********************************************************************************************************************/
 // gets the first span tag and sets the year.
 document.querySelector("#year").textContent = year.toString();
