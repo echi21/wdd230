@@ -97,7 +97,7 @@
       
       <div id="weather-box" class="div-padding">
         <h2>Weather</h2>
-        <div id="temperature-unit" class="wind-speed-box">
+        <div id="temperature-unit" class="wind-speed-box1">
           <picture>
             <source srcset="">
             <img src="images/weather.webp" alt="Weather">
@@ -106,11 +106,11 @@
         </div>
         <p id="weather-comment"></p>
         <hr>
-        <div class="wind-speed-box">
-          <p>Wind Speed:</p><span id="wind-speed"></span><p> km/h</p>
+        <div class="wind-speed-box2">
+          <p class="wind-p1">Wind Speed: </p><span id="wind-speed"></span><p>km/h</p>
         </div>
-        <div class="wind-speed-box">
-          <p>Wind Chill:</p><span id="wind-chill"></span><p>°C</p>
+        <div class="wind-speed-box2">
+          <p class="wind-p1">Wind Chill: </p><span id="wind-chill"></span><p>°C</p>
         </div>
       </div>
       
@@ -186,6 +186,11 @@
         </div>
       </div>
       <div id="footer-main-box2">
+        <hr>
+        <p>
+          All credits to <a href="https://openweathermap.org" target="_blank">OpenWeather</a>, a weather data source
+          used here to display weather information.
+        </p>
         <hr>
         <p>&copy; <span id="year"></span>
           Balcarce Chamber of Commerce - C. Ezequiel Iannone - WDD 230 Project - <span id="updated-date"></span>

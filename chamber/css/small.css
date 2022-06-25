@@ -271,7 +271,7 @@ nav ul li.active {
   grid-row: 2 / 3;
 }
 
-/********************#weather-box*****************/
+/*-------------------#weather-box----------------*/
 #weather-box {
   grid-row: 3 / 4;
 }
@@ -296,10 +296,29 @@ nav ul li.active {
   font-weight: bold;
 }
 
-.wind-speed-box {
+.wind-speed-box1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.wind-speed-box2 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 14rem;
+  margin: 0 auto;
+}
+
+.wind-speed-box2 .wind-p1 {
+  width: 7.5rem;
+  /*margin-left: .5rem;*/
+  text-align: left;
+}
+
+.wind-speed-box2 span {
+  width: 3rem;
+  text-align: left;
 }
 
 #temperature-unit #temperature,
@@ -715,12 +734,14 @@ footer hr {
   font-size: 1.2rem;
 }
 
-#footer-email-box a {
+#footer-email-box a,
+#footer-main-box2 a {
   text-decoration-line: none;
   color: var(--accent2-color);
-  padding: .2rem;
+  /*padding: .2rem;*/
 }
 
-#footer-email-box a:hover {
+#footer-email-box a:hover,
+#footer-main-box2 a:hover {
   border: var(--nav-hover-link-color) 1px dotted;
 }
