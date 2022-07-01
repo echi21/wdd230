@@ -1,6 +1,10 @@
 /* 35rem is also 560px when basefont is 16px */
 @media only screen and (min-width: 54rem) {
 
+  #logo-title-box {
+    width: initial;
+  }
+
   #logo-box img {
     width: 7rem;
   }
@@ -129,12 +133,30 @@
     transform: rotate(-2deg);
   }
 
-  /*----------- FORM --------------*/
+  /*-----------------------JOIN.HTML---------------------*/
 
-  #membership-box {
+  #join-main {
+    max-width: 80%;
+  }
+
+  form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr .5fr;
+    grid-gap: 1rem;
     justify-content: center;
+  }
+
+  fieldset {
+    grid-column: 1 / 2;
+    margin: 1rem 0;
+  }
+
+  #membership-descriptions {
+    grid-column: 2 / 4;
+  }
+
+  form #submit-btn {
+    grid-column: 1 / 2;
   }
 
   /*---------------------DIRECTORY.HTML--------------------*/

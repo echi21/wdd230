@@ -75,9 +75,8 @@
       <p>Just fill out the form, and we will contact you as soon as possible.</p>
       
       <form action="thank-you.html" method="get">
-    
         <fieldset>
-          <legend>Personal Information</legend>
+          <legend>Your Information</legend>
           <label for="first-name" class="top">First Name*
             <input type="text" name="first-name" id="first-name" required>
           </label>
@@ -93,10 +92,7 @@
           <label class="top">Cell Phone / Phone*
             <input type="tel" name="phone" placeholder="e.g.1235551234" required>
           </label>
-        </fieldset>
-        
-        <fieldset>
-          <legend>Business Information</legend>
+          
           <label  for="business-name" class="top">Business Name*
             <input type="text" name="business-name" id="business-name" required>
           </label>
@@ -110,37 +106,67 @@
                       placeholder="Describe briefly your business..." cols="10" rows="10" maxlength="500">
             </textarea>
           </label>
+
+          <label id="membership-choices-label">Membership Choices</label>
+          <label class="choices">
+            <input class="radios" type="radio" name="member" value="np">
+            NP Membership
+          </label>
+          <label class="choices">
+            <input class="radios" type="radio" name="member" value="bm">
+            Bronze Membership
+          </label>
+          <label class="choices">
+            <input class="radios" type="radio" name="member" value="sm">
+            Silver Membership
+          </label>
+          <label class="choices">
+            <input class="radios" type="radio" name="member" value="gm">
+            Gold Membership
+          </label>
+          
+          <label id="date-time">
+            <input type="hidden" name="full-date">
+          </label>
         </fieldset>
+      
+        <div id="membership-descriptions">
+          <h2>Membership benefits and prices</h2>
+          <p>At the end of the form you'll be prompted to choose a membership category. Below we present the
+            available options with their prices and benefits:
+          </p>
+          <h3>NP Membership</h3>
+          <p>This is for non-profit organizations and there is no fee. With this option you are welcome to read and
+            receive our news through your e-mail address.
+          </p>
+          
+          <h3>Bronze Membership</h3>
+          <p>This is an affordable option for those who want to experiment and not spend too much. It has a monthly
+            cost of $100. With it, you have the right to receive professional advice for your business, and during
+            the month you can receive 3 training sessions, advertising on our site, and new newsletters.
+          </p>
+          
+          <h3>Silver Membership</h3>
+          <p>This is a prominent option for those who want higher profits. It has a monthly cost of $250. With it,
+            you have the right to receive professional advice for your business 8 hours a day during working days,
+            and during the month you can receive 8 training sessions, 10 advertisements on our site, discounts on
+            events, 4 scheduled accesses to our golf course, newsletters and much more.
+          </p>
+          
+          <h3>Gold Membership</h3>
+          <p>This is the best option for those who want all the benefits we have in our community. It has a monthly
+            cost of $400. With it, you have the right to receive professional advice for your business 8 hours a day
+            throughout the week, and during the month you can receive all the training that is available, 30
+            advertisements on our site, discounts on events, trips and purchases, free scheduled access to our golf
+            course, credits for investments, newsletters and much more.
+          </p>
+        </div>
         
-        <fieldset id="membership-box">
-          <legend>Membership Choices</legend>
-          <div id="labels">
-            <label class="choices">
-              <input class="radios" type="radio" name="member" value="np">
-              NP Membership
-            </label>
-            <label class="choices">
-              <input class="radios" type="radio" name="member" value="bm">
-              Bronze Membership
-            </label>
-            <label class="choices">
-              <input class="radios" type="radio" name="member" value="sm">
-              Silver Membership
-            </label>
-            <label class="choices">
-              <input class="radios" type="radio" name="member" value="gm">
-              Gold Membership
-            </label>
-            <label id="date-time">
-              <input type="hidden" name="full-date">
-            </label>
-          </div>
-          <div>
-            <h3>Prices and Benefits</h3>
-            <span id="benefits"></span>
-          </div>
-        </fieldset>
-    
+        <!--<div>
+          <h3>Prices and Benefits</h3>
+          <span id="benefits"></span>
+        </div>-->
+        
         <input type="submit" value="Join the community" id="submit-btn">
       </form>
       
