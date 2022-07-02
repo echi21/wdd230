@@ -25,7 +25,6 @@ html {
   --paragraph-font: "Poppins", Arial, sans-serif;
 
   --nav-link-color: #00297A;
-  --nav-hover-link-color: white;
 }
 
 /*************************************************/
@@ -265,7 +264,7 @@ nav ul.open {
   font-size: 1.6rem;
   color: var(--accent2-color);
   background-color: var(--secondary-color);
-  border: none;
+  border: 2px solid var(--accent2-color);
   border-radius: 2rem;
 }
 
@@ -351,7 +350,8 @@ nav ul.open {
 /*--------------------.styling-button--------------------*/
 #hero-box .styling-button:hover,
 #join-box .styling-button:hover,
-#submit-btn:hover {
+#join-form #join-submit-btn:hover,
+#contact-form #contact-submit-btn:hover {
   color: var(--accent4-color);
   box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.24);
   cursor: pointer;
@@ -359,7 +359,8 @@ nav ul.open {
 
 #hero-box .styling-button:active,
 #join-box .styling-button:active,
-#submit-btn:active {
+#join-submit-btn:active,
+#contact-submit-btn:active {
   color: var(--accent2-color);
   transform: translateY(.2rem);
 }
@@ -635,18 +636,15 @@ nav ul.open {
 
 #join-form fieldset,
 #contact-form fieldset {
-  /*margin: 1rem auto;*/
   padding: 2rem;
   border: 2px solid var(--secondary-color);
-  border-radius: 1rem;
 }
 
 #membership-descriptions,
 .contact-board-of-info {
   margin: 1.65rem auto 1rem auto;
-  padding: 2rem;
+  padding: .5rem;
   border: 2px solid var(--secondary-color);
-  border-radius: 1rem;
 }
 
 #join-form legend,
@@ -658,7 +656,7 @@ nav ul.open {
 }
 
 #join-form label {
-  /*display: block;*/
+  display: block;
 }
 
 #join-form label.top input,
@@ -710,8 +708,9 @@ nav ul.open {
   color: #555;
 }
 
-#join-form #submit-btn,
-#contact-form #submit-btn {
+/*----------------------form's buttons---------------------*/
+#join-form #join-submit-btn,
+#contact-form #contact-submit-btn {
   display: block;
   border: none;
   padding: .5rem 1.5rem;
@@ -722,6 +721,79 @@ nav ul.open {
   border-radius: 2rem;
 }
 
+
+/*-----------------------CONTACT.HTML--------------------*/
+#contact-main {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#contact-main h2, #contact-main h3 {
+  text-align: center;
+  margin-top: 2rem;
+  padding: .5rem;
+}
+
+#contact-main h2 {
+  font-size: 1.8rem;
+}
+
+#contact-main #board-title {
+  margin-top: 0;
+}
+
+#contact-main h3 {
+  font-size: 1.4rem;
+}
+
+#contact-main h4 {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+#contact-main p {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.contact-info-container {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+#contact-main .contact-info-container p {
+  font-size: 1.1rem;
+  padding: .5rem;
+}
+
+#contact-grid {
+  margin: 2rem auto;
+}
+
+#contact-image-box img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#contact-image-box,
+#contact-info-box {
+  border: 2px solid var(--secondary-color);
+}
+
+#contact-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-director-box img,
+#contact-secretary-box img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
 /*----------------------THANK-YOU.HTML-------------------*/
 #thank-you-main {
   max-width: 60%;
@@ -742,73 +814,6 @@ nav ul.open {
   margin: 1rem auto;
   border: 2px solid black;
 }
-
-/*-----------------------CONTACT.HTML--------------------*/
-#contact-main {
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-#contact-main h2, #contact-main h3 {
-  text-align: center;
-  margin-top: 2rem;
-  padding: .5rem;
-}
-
-#contact-main h2 {
-  font-size: 1.8rem;
-}
-
-#contact-main h3 {
-  font-size: 1.4rem;
-}
-
-#contact-main p {
-  font-size: 1.1rem;
-  text-align: center;
-  padding: 1rem;
-}
-
-.contact-info-container {
-  width: 70%;
-  margin: 2rem auto;
-}
-
-#contact-main .contact-info-container p {
-  font-size: 1.1rem;
-  text-align: initial;
-  padding: .5rem;
-}
-
-#contact-grid {
-  margin: 2rem auto;
-}
-
-#contact-image img{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-#contact-image,
-#contact-info {
-  border: 1px solid var(--secondary-color);
-}
-
-#contact-grid {
-  display: flex;
-  flex-direction: column;
-}
-
-#contact-director img,
-#contact-secretary img {
-  display: block;
-  margin: 0 auto;
-  width: 90%;
-}
-
-
-
 /*-------------------------footer------------------------*/
 footer {
   background-color: var(--secondary-color);
@@ -834,10 +839,9 @@ footer hr {
 #footer-main-box2 a {
   text-decoration-line: none;
   color: var(--accent2-color);
-  /*padding: .2rem;*/
 }
 
 #footer-email-box a:hover,
 #footer-main-box2 a:hover {
-  border: var(--nav-hover-link-color) 1px dotted;
+  border: 1px dotted var(--primary-color);
 }

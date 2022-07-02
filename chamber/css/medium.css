@@ -183,13 +183,18 @@
     grid-column: 2 / 4;
   }
 
-  #join-form #submit-btn {
+  #join-form #join-submit-btn {
     grid-column: 1 / 2;
+  }
+
+  #membership-descriptions,
+  .contact-board-of-info {
+    padding: 2rem;
   }
 
   /*-----------------------CONTACT.HTML--------------------*/
   #contact-main {
-    max-width: 80%;
+    max-width: 75%;
   }
 
   #contact-grid {
@@ -197,11 +202,11 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  #contact-image {
+  #contact-image-box {
     grid-column: 1 / 2;
   }
 
-  #contact-info {
+  #contact-info-box {
     grid-column: 2 / 3;
   }
 
@@ -209,30 +214,16 @@
     grid-column: 1 / 3;
   }
 
-  #contact-director img,
-  #contact-secretary img {
-    display: block;
-    margin: 0 auto;
+  #contact-director-box img,
+  #contact-secretary-box img {
     width: initial;
   }
-/*
-  #robert-image {
-    float: left;
-  }
 
-  #chris-image {
-    float: right;
-  }*/
-
-  #contact-director,
-  #contact-secretary {
+  #contact-director-box,
+  #contact-secretary-box {
     display: flex;
     align-items: center;
   }
-
-
-
-
 
   #contact-form {
     max-width: 70%;
