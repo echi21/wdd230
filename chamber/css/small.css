@@ -37,6 +37,7 @@ body {
   background-color: var(--accent4-color);
 }
 
+/*------------------------header-------------------------*/
 header {
   margin: 0 auto;
   padding-top: 4rem;
@@ -121,7 +122,7 @@ h3 {
   margin: .5rem;
 }
 
-/*************************************************/
+/*-------------------------------------------------------*/
 
 nav {
   background-color: var(--secondary-color);
@@ -165,12 +166,12 @@ nav ul.open {
   color: #fff;
 }*/
 
-nav ul li.active {
-  border: var(--primary-color) 1px solid;
-}
-
 #primary-nav a:hover, #secondary-nav a:hover {
   border: var(--accent2-color) 1px solid;
+}
+
+.active {
+  border: var(--primary-color) 1px solid;
 }
 
 /*************************************************/
@@ -213,7 +214,6 @@ nav ul li.active {
 
 #index-main-grid h2 {
   text-align: center;
-  /*text-shadow: 0 0 10px grey;*/
   text-shadow: 0 0 3px gray;
 }
 
@@ -231,7 +231,7 @@ nav ul li.active {
   font-size: 1.1rem;
 }
 
-/*********************#hero-box********************/
+/*-----------------------#hero-box-----------------------*/
 #hero-box {
   grid-row: 1 / 2;
   padding: inherit;
@@ -269,12 +269,12 @@ nav ul li.active {
   border-radius: 2rem;
 }
 
-/********************#event-box*******************/
+/*----------------------#event-box-----------------------*/
 #event-box {
   grid-row: 2 / 3;
 }
 
-/*-------------------#weather-box----------------*/
+/*----------------------#weather-box---------------------*/
 #weather-box {
   grid-row: 3 / 4;
 }
@@ -328,7 +328,7 @@ nav ul li.active {
   font-size: 2rem;
 }
 
-/********************#join-box********************/
+/*------------------------#join-box----------------------*/
 #join-box {
   display: none;
 }
@@ -348,7 +348,7 @@ nav ul li.active {
   margin-top: .5rem;
 }
 
-/*------------------.styling-button--------------*/
+/*--------------------.styling-button--------------------*/
 #hero-box .styling-button:hover,
 #join-box .styling-button:hover,
 #submit-btn:hover {
@@ -364,12 +364,12 @@ nav ul li.active {
   transform: translateY(.2rem);
 }
 
-/*-------------------#news-box-------------------*/
+/*-----------------------#news-box-----------------------*/
 #news-box {
   grid-row: 4 / 5;
 }
 
-/*-------------------#spots-box------------------*/
+/*-----------------------#spots-box----------------------*/
 #spots-box {
   grid-row: 5 / 7;
   display: grid;
@@ -397,7 +397,7 @@ nav ul li.active {
   display: none;
 }
 
-/*-----------------DISCOVER.HTML-----------------*/
+/*---------------------DISCOVER.HTML---------------------*/
 
 #discover-main-grid {
   width: 100%;
@@ -427,7 +427,7 @@ nav ul li.active {
   overflow: hidden;
 }
 
-/*-----------------lazy-load-effect------------------*/
+/*--------------------lazy-load-effect-------------------*/
 /*We render the images with a blur at the beginning, so a transition to the sharp one can be achieved:*/
 #images-column .card img[data-src] {
   filter: blur(0.3em);
@@ -495,138 +495,6 @@ nav ul li.active {
   width: 80%;
   display: block;
   margin: 0 auto;
-}
-
-/*--------------------JOIN.HTML------------------*/
-#join-main {
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-#join-main h2, #join-main h3 {
-  text-align: center;
-  margin-top: 2rem;
-  padding: .5rem;
-}
-
-#join-main h2 {
-  font-size: 1.8rem;
-}
-
-#join-main h3 {
-  font-size: 1.4rem;
-}
-
-#join-main p {
-  font-size: 1.1rem;
-  text-align: center;
-  padding: .5rem;
-}
-
-/*----------------------form---------------------*/
-
-form {
-  margin: 2rem auto;
-}
-
-fieldset {
-  margin: 1rem auto;
-  padding: 2rem;
-  border: 2px solid var(--secondary-color);
-  border-radius: 1rem;
-}
-
-#membership-descriptions {
-  margin: 1.65rem auto 1rem auto;
-  padding: 2rem;
-  border: 2px solid var(--secondary-color);
-  border-radius: 1rem;
-}
-
-form legend {
-  color: var(--nav-link-color);
-  margin: 0 1rem;
-  padding: 0 .5rem;
-  font-size: 1.2rem;
-}
-
-form label {
-  display: block;
-}
-
-form label.top input {
-  display: block;
-  width: 100%;
-  margin-top: .1rem;
-  margin-bottom: 2rem;
-  padding: .5rem;
-  font-size: 1.1rem;
-  color: #555;
-  border: 1px solid var(--accent1-color);
-}
-
-form label.top input:required {
-  border-left: .5rem solid red;
-}
-
-form label.top input:required:valid {
-  border: 1px solid var(--accent1-color);
-}
-
-.label-textarea {
-  display: flex;
-  flex-direction: column;
-}
-
-#description-text-area {
-  height: 12rem;
-  margin-top: .1rem;
-  margin-bottom: 2rem;
-  padding: 1rem;
-  resize: none;
-}
-
-#membership-choices-label {
-  margin-bottom: 1rem;
-}
-
-form label.choices {
-  display: block;
-  max-width: 26rem;
-  padding: .4rem;
-  color: #555;
-}
-
-form #submit-btn {
-  display: block;
-  border: none;
-  padding: .5rem 1.5rem;
-  margin: 2rem auto;
-  font-size: 1.4rem;
-  background-color: var(--secondary-color);
-  color: var(--accent2-color);
-  border-radius: 2rem;
-}
-
-/*------------------THANK-YOU.HTML---------------*/
-#thank-you-main {
-  max-width: 60%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#thank-you-main h2 {
-  margin-top: 2rem;
-}
-
-#thank-you-main p {
-  padding: 1rem;
-}
-
-#thank-you-main img {
-  width: 100%;
-  margin: 1rem auto;
-  border: 2px solid black;
 }
 
 /*---------------------DIRECTORY.HTML--------------------*/
@@ -732,7 +600,216 @@ form #submit-btn {
   margin-left: 1rem;
 }
 
-/*-------------------footer----------------------*/
+/*------------------------JOIN.HTML----------------------*/
+#join-main {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#join-main h2, #join-main h3 {
+  text-align: center;
+  margin-top: 2rem;
+  padding: .5rem;
+}
+
+#join-main h2 {
+  font-size: 1.8rem;
+}
+
+#join-main h3 {
+  font-size: 1.4rem;
+}
+
+#join-main p {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: .5rem;
+}
+
+/*--------------------------form-------------------------*/
+
+#join-form,
+#contact-form {
+  margin: 2rem 0;
+}
+
+#join-form fieldset,
+#contact-form fieldset {
+  /*margin: 1rem auto;*/
+  padding: 2rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: 1rem;
+}
+
+#membership-descriptions,
+.contact-board-of-info {
+  margin: 1.65rem auto 1rem auto;
+  padding: 2rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: 1rem;
+}
+
+#join-form legend,
+#contact-form legend {
+  color: var(--nav-link-color);
+  margin: 0 1rem;
+  padding: 0 .5rem;
+  font-size: 1.2rem;
+}
+
+#join-form label {
+  /*display: block;*/
+}
+
+#join-form label.top input,
+#contact-form label.top input {
+  display: block;
+  width: 100%;
+  margin-top: .1rem;
+  margin-bottom: 2rem;
+  padding: .5rem;
+  font-size: 1.1rem;
+  color: #555;
+  border: 1px solid var(--accent1-color);
+}
+
+#join-form label.top input:required,
+#contact-form label.top input:required {
+  border-left: .5rem solid red;
+}
+
+#join-form label.top input:required:valid,
+#contact-form label.top input:required:valid {
+  border: 1px solid var(--accent1-color);
+}
+
+#join-form .label-textarea,
+#contact-form .label-textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+#join-form #description-text-area,
+#contact-form #description-text-area {
+  height: 12rem;
+  margin-top: .1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  resize: none;
+}
+
+#join-form #membership-choices-label {
+  margin-bottom: 1rem;
+}
+
+#join-form label.choices,
+#contact-form label.choices {
+  display: block;
+  max-width: 26rem;
+  padding: .4rem;
+  color: #555;
+}
+
+#join-form #submit-btn,
+#contact-form #submit-btn {
+  display: block;
+  border: none;
+  padding: .5rem 1.5rem;
+  margin: 2rem auto;
+  font-size: 1.4rem;
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
+  border-radius: 2rem;
+}
+
+/*----------------------THANK-YOU.HTML-------------------*/
+#thank-you-main {
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#thank-you-main h2 {
+  margin-top: 2rem;
+}
+
+#thank-you-main p {
+  padding: 1rem;
+}
+
+#thank-you-main img {
+  width: 100%;
+  margin: 1rem auto;
+  border: 2px solid black;
+}
+
+/*-----------------------CONTACT.HTML--------------------*/
+#contact-main {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#contact-main h2, #contact-main h3 {
+  text-align: center;
+  margin-top: 2rem;
+  padding: .5rem;
+}
+
+#contact-main h2 {
+  font-size: 1.8rem;
+}
+
+#contact-main h3 {
+  font-size: 1.4rem;
+}
+
+#contact-main p {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.contact-info-container {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+#contact-main .contact-info-container p {
+  font-size: 1.1rem;
+  text-align: initial;
+  padding: .5rem;
+}
+
+#contact-grid {
+  margin: 2rem auto;
+}
+
+#contact-image img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#contact-image,
+#contact-info {
+  border: 1px solid var(--secondary-color);
+}
+
+#contact-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-director img,
+#contact-secretary img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+
+
+/*-------------------------footer------------------------*/
 footer {
   background-color: var(--secondary-color);
   color: var(--accent1-color);
