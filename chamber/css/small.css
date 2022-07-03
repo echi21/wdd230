@@ -214,6 +214,7 @@ nav ul.open {
 #index-main-grid h2 {
   text-align: center;
   text-shadow: 0 0 3px gray;
+  margin: 1rem 0;
 }
 
 #index-main-grid hr {
@@ -222,7 +223,7 @@ nav ul.open {
 }
 
 #index-main-grid p {
-  padding: .2rem 0;
+  padding: .5rem;
 }
 
 #index-main-grid p,
@@ -334,17 +335,13 @@ nav ul.open {
 
 #join-box button {
   width: 40rem;
-  margin-top: .5rem;
+  margin: 2rem;
   padding: .2rem;
   font-size: 1.6rem;
   background-color: var(--secondary-color);
   color: var(--accent2-color);
   border: none;
   border-radius: 2rem;
-}
-
-#join-box p {
-  margin-top: .5rem;
 }
 
 /*--------------------.styling-button--------------------*/
@@ -380,22 +377,11 @@ nav ul.open {
 
 #spots-box div {
   margin: .5rem auto;
+  padding: 1rem;
   width: 100%;
   height: auto;
   border: 1px solid rgba(0,0,0,0.3);
   font-size: 1.1rem;
-}
-/*************************************************/
-#spot1 {
-  grid-row: 1 / 2;
-}
-/*************************************************/
-#spot2 {
-  grid-row: 2 / 3;
-}
-/*************************************************/
-#spot3 {
-  display: none;
 }
 
 /*---------------------DISCOVER.HTML---------------------*/
@@ -417,7 +403,6 @@ nav ul.open {
   background-color: var(--primary-color);
   box-shadow: 1px 1px 10px grey;
   padding: .5rem;
-  margin: .5rem;
 }
 
 #images-column .card {
@@ -565,14 +550,14 @@ nav ul.open {
   background-color: var(--accent3-color);
 }
 
-#directory-cards img {
+#directory-cards img,
+#index-main-grid #spots-box div img {
   width: 150px;
   height: 150px;
   margin-top: 1rem;
   border-radius: 1rem;
   border: 4px solid var(--accent2-color);
 }
-
 /*-------------------------.list-------------------------*/
 
 #directory-main .list {
@@ -582,7 +567,7 @@ nav ul.open {
 }
 
 #directory-main .list section {
-  margin: .5rem 0; /*I think that because of the change with flex, the last 0 represents the horizontal alignment*/
+  margin: .5rem 0;
   border: initial;
   border-radius: initial;
 }

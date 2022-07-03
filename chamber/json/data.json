@@ -24,6 +24,14 @@
     "membershipLevel" : "Gold Membership"
   },
   {
+    "name" : "Caracol",
+    "address" : "#588, Street 17",
+    "phoneNumber" : "(54 2266) - 425054",
+    "webAddress" : "https://www.caracoldigital.com.ar",
+    "image" : "images/companies/caracol.webp",
+    "membershipLevel" : "Bronze Membership"
+  },
+  {
     "name" : "Banfi Hnos",
     "address" : "#536, Street 21",
     "phoneNumber" : "(54 2266) - 423262",
@@ -40,6 +48,14 @@
     "membershipLevel" : "Silver Membership"
   },
   {
+    "name" : "Humeplac",
+    "address" : "#525, Av. del Valle",
+    "phoneNumber" : "(54 2266) - 423112",
+    "webAddress" : "https://humeplac.com",
+    "image" : "images/companies/humeplac.webp",
+    "membershipLevel" : "Bronze Membership"
+  },
+  {
     "name" : "Gauchitas",
     "address" : "Km 79.4, Route 55",
     "phoneNumber" : "(54 2266) - 639179",
@@ -54,21 +70,5 @@
     "webAddress" : "http://www.capei.com.ar",
     "image" : "images/companies/capei.webp",
     "membershipLevel" : "Silver Membership"
-  },
-  {
-    "name" : "Humeplac",
-    "address" : "#525, Av. del Valle",
-    "phoneNumber" : "(54 2266) - 423112",
-    "webAddress" : "https://humeplac.com",
-    "image" : "images/companies/humeplac.webp",
-    "membershipLevel" : "Bronze Membership"
-  },
-  {
-    "name" : "Caracol",
-    "address" : "#588, Street 17",
-    "phoneNumber" : "(54 2266) - 425054",
-    "webAddress" : "https://www.caracoldigital.com.ar",
-    "image" : "images/companies/caracol.webp",
-    "membershipLevel" : "Bronze Membership"
   }
 ]

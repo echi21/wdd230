@@ -1,17 +1,16 @@
 
 const WEB_ADDRESS = "json/data.json";
-const CARDS = document.querySelector("#directory-cards");
+const DIRECTORY_CARDS = document.querySelector("#directory-cards");
+const GRID_BUTTON = document.querySelector("#grid-btn");
+const LIST_BUTTON = document.querySelector("#list-btn");
 let companiesArray = [];
-const gridButton = document.querySelector("#grid-btn");
-const listButton = document.querySelector("#list-btn");
-const display = document.querySelector("#directory-cards");
 
-gridButton.addEventListener("click", () => {
-  display.classList.remove("list");
+GRID_BUTTON.addEventListener("click", () => {
+  DIRECTORY_CARDS.classList.remove("list");
 });
 
-listButton.addEventListener("click", () => {
-  display.classList.add("list");
+LIST_BUTTON.addEventListener("click", () => {
+  DIRECTORY_CARDS.classList.add("list");
 });
 
 /*
@@ -29,7 +28,7 @@ function tryingToConvertResponseToJson(response) {
 }
 
 function renderContent(companiesArray) {
-  companiesArray.forEach(function (company) {
+  companiesArray.forEach((company) => {
     let sectionElement = document.createElement("section");
     let h3Element = document.createElement("h3");
     let p1Element = document.createElement("p");
@@ -59,7 +58,7 @@ function renderContent(companiesArray) {
     sectionElement.appendChild(p3Element);
     sectionElement.appendChild(p4Element);
 
-    CARDS.appendChild(sectionElement);
+    DIRECTORY_CARDS.appendChild(sectionElement);
   });
 }
 
