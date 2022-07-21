@@ -107,8 +107,27 @@
     box-shadow: 1px 1px 100px gray;
   }
 
-  /*---------------------DIRECTORY.HTML--------------------*/
-  #directory-main .list {
+  /*---------------------TEMPLES.HTML--------------------*/
+
+  #directory-cards {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+
+  #directory-main > p {
+    font-size: 1.2rem;
+    padding: .5rem;
+  }
+
+  #directory-main section {
+    width: 500px;
+  }
+
+  #directory-main img {
+    width: 300px;
+    height: auto;
+  }
+
+ /* #directory-main .list {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,7 +152,7 @@
     padding-left: 1rem;
     width: 20%;
     text-align: left;
-  }
+  }*/
 
   /*-----------------------RESERVATION.HTML---------------------*/
   #reservation-main h3 {

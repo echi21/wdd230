@@ -1,7 +1,7 @@
 
 const WEB_ADDRESS = "json/data.json";
 const DIRECTORY_CARDS = document.querySelector("#directory-cards");
-const GRID_BUTTON = document.querySelector("#grid-btn");
+/*const GRID_BUTTON = document.querySelector("#grid-btn");
 const LIST_BUTTON = document.querySelector("#list-btn");
 let templesArray = [];
 
@@ -12,7 +12,7 @@ GRID_BUTTON.addEventListener("click", () => {
 LIST_BUTTON.addEventListener("click", () => {
   DIRECTORY_CARDS.classList.add("list");
 });
-
+*/
 
 // Using the built-in fetch method, calls this URL:
 function main() {
