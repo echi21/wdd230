@@ -449,7 +449,8 @@ nav ul.open {
 
 /*------------------------#join-box----------------------*/
 
-#join-box button {
+#join-box button,
+#directory-cards button {
   width: 15rem;
   margin: 2rem;
   padding: .5rem;
@@ -464,7 +465,8 @@ nav ul.open {
 #hero-box .styling-button:active,
 #join-box .styling-button:active,
 #join-submit-btn:active,
-#contact-submit-btn:active {
+#contact-submit-btn:active,
+#directory-cards button:active {
   color: var(--accent2-color);
   transform: translateY(.2rem);
 }
@@ -560,35 +562,6 @@ nav ul.open {
   text-align: center;
 }
 
-/*
-.menu {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-}
-
-#directory-main .menu button {
-  margin: 0 2rem;
-  border: unset;
-}
-
-#directory-main .menu button:hover {
-  cursor: pointer;
-  box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.24);
-}
-
-#directory-main .menu img {
-  display: block;
-  margin: 0 auto;
-  background-color: var(--primary-color);
-  box-shadow: 1px 1px 10px 2px var(--accent2-color);
-}
-
-#directory-main .menu p {
-  text-align: center;
-  margin: 0;
-}*/
-
 #directory-main h3 {
   margin-top: 1rem;
   padding: .2rem;
@@ -625,48 +598,9 @@ nav ul.open {
 #index-main-grid #spots-box div img {
   width: 200px;
   height: auto;
-  margin-top: 1rem;
-  border-radius: 1rem;
-  border: 4px solid var(--accent2-color);
+  margin-top: 2rem;
+  border: 1px solid var(--accent6-color);
 }
-/*-------------------------.list-------------------------*/
-
-#directory-main .list {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /*Because of the inversion, aligns the sections horizontally*/
-}
-
-#directory-main .list section {
-  margin: .5rem 0;
-  border: initial;
-  border-radius: initial;
-}
-
-#directory-main .list section:nth-of-type(even) {
-  background-color: var(--accent1-color);
-}
-
-.list img {
-  display: none;
-}
-
-#directory-main .list h3,
-#directory-main .list p {
-  text-align: left;
-  margin-left: 1rem;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 

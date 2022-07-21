@@ -97,6 +97,7 @@
 
   #hero-box .styling-button:hover,
   #join-box .styling-button:hover,
+  #directory-cards button:hover,
   #reservation-form #reservation-submit-btn:hover,
   #contact-form #contact-submit-btn:hover {
     color: var(--secondary-color);

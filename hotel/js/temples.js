@@ -49,6 +49,9 @@ function renderContent(templesArray) {
     let p4Element = document.createElement("p");
     let p5Element = document.createElement("p");
     let imgElement = document.createElement("img");
+    let btnElement = document.createElement("button");
+
+
 
     h3Element.textContent = temple.name;
     p1Element.textContent = temple.address;
@@ -56,9 +59,11 @@ function renderContent(templesArray) {
     p3Element.textContent = temple.services;
     p4Element.textContent = temple.closureSchedule;
     p5Element.textContent = temple.history;
+    btnElement.textContent = "LIKE";
 
     imgElement.setAttribute("src", temple.image);
     imgElement.setAttribute("alt", temple.name);
+    btnElement.setAttribute("class", "like-me");
 
     sectionElement.appendChild(imgElement);
     sectionElement.appendChild(h3Element);
@@ -67,6 +72,7 @@ function renderContent(templesArray) {
     sectionElement.appendChild(p3Element);
     sectionElement.appendChild(p4Element);
     sectionElement.appendChild(p5Element);
+    sectionElement.appendChild(btnElement);
 
     DIRECTORY_CARDS.appendChild(sectionElement);
   });
