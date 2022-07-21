@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans:wght@300&display=swap">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Reservation - Temple Inn & Suites</title>
+    <meta name="author" content="Ezequiel Iannone">
+    <meta name="description" content="Fill out our form and make your reservation in the best hotel, Temple
+      Inn & Suites. We promise a comfortable place and excellent services.">
+    <script src="js/script.js" defer></script>
+    <script src="js/temples.js" defer></script>
+  
+  </head>
+  <body>
+    <div id="weather-alert">☁ <span>The combination of hot temperatures and high humidity will combine to create a
+              dangerous situation. Be careful!</span>
+      <button id="close-weather-alert-button">X</button>
+    </div>
+    <header>
+      <div id="header-box1">
+        <strong><span id="current-date"></span></strong>
+      </div>
+      
+      
+      <div id="header-box2">
+        
+        <div id="logo-box">
+          <a href="../hotel/">
+            <picture>
+              <source srcset="images/flogo-300x323.jpg">
+              <img src="images/flogo-300x323.jpg" alt="Logo image">
+            </picture>
+          </a>
+        </div>
+        
+        <div id="title-box">
+          <h1>Temple Inn & Suites</h1>
+        </div>
+        
+        
+        <div id="social-box">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook-circle-64x64.png" alt="return">
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img src="images/linkedin-circle-64x64.png" alt="return">
+          </a>
+        </div>
+      </div>
+      
+      <nav>
+        <button id="hamburger-btn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primary-nav">
+          <li><a href="../hotel/">Home</a></li>
+          <li class="active"><a href="temples.html">Temples</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main id="directory-main">
+      <h2>Business Directory</h2>
+      <div class="menu">
+        <div>
+          <button id="grid-btn"><img src="images/companies/grid-48-y.png" alt="Grid" title="Grid"></button>
+          <p>Show Grid</p>
+        </div>
+        <div>
+          <button id="list-btn"><img src="images/companies/list-48-y.png" alt="List" title="List"></button>
+          <p>Show List</p>
+        </div>
+      </div>
+      
+      <div id="directory-cards">
+        
+        <!--here will be placed all the section elements-->
+        
+      </div>
+      
+    </main>
+
+    <footer>
+      <div id="footer-main-box1">
+        <ul>
+          <li><strong>ADDRESS</strong></li>
+          <li>Temple Inn & Suites</li>
+          <li>4800 Montgomery Ln #300</li>
+          <li>Bethesda, MD 20814 U.S.</li>
+          <li class="links-hover-effect"><a href="#header-box1"><strong>Back to the top</strong></a></li>
+        </ul>
+        <hr>
+        <ul>
+          <li><strong>CONTACT INFO</strong></li>
+          <li id="footer-e-mail-address">teminnsuiteshotel@corporation.com</li>
+          <li>801-937-2022</li>
+          <li class="links-hover-effect"><a href="https://goo.gl/maps/wbDfUuZ6pvPDbjM39" target="_blank">
+            <span>&#x1F5FA;</span> <strong>Headquarters</strong></a></li>
+        </ul>
+        <hr>
+        <ul>
+          <li id="find-us"><strong>FIND US</strong></li>
+          <li class="links-hover-effect">
+            <a href="https://www.facebook.com" target="_blank"><strong>Facebook</strong></a>
+          </li>
+          <li class="links-hover-effect">
+            <a href="https://twitter.com" target="_blank"><strong>Twitter</strong></a>
+          </li>
+          <li class="links-hover-effect">
+            <a href="https://https://www.linkedin.com" target="_blank"><strong>Linked In</strong></a>
+          </li>
+        </ul>
+      </div>
+  
+      <div id="footer-main-box2">
+        <hr>
+        <p class="links-hover-effect">
+          Weather data powered by
+          <a href="https://openweathermap.org" target="_blank" id="open-weather-width"><strong>OpenWeather API</strong></a>
+        </p>
+        <hr>
+        <div id="footer-last-line">
+          <p>
+            - &copy; <span id="year"></span>
+            Temple Inn & Suites -
+          </p>
+          <p>
+            - Author: C. Ezequiel Iannone -
+          </p>
+          <p>
+            - <span id="updated-date"></span> -
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

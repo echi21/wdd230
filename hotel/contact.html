@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans:wght@300&display=swap">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Contact - Temple Inn & Suites</title>
+    <meta name="author" content="Ezequiel Iannone">
+    <meta name="description" content="Contact us just filling out a short form, calling or just visiting our offices.">
+    <script src="js/script.js" defer></script>
+  
+  </head>
+  <body>
+    <div id="weather-alert">☁ <span>The combination of hot temperatures and high humidity will combine to create a
+            dangerous situation. Be careful!</span>
+      <button id="close-weather-alert-button">X</button>
+    </div>
+    <header>
+      <div id="header-box1">
+        <strong><span id="current-date"></span></strong>
+      </div>
+      
+      
+      <div id="header-box2">
+        <div id="logo-box">
+          <a href="../hotel/">
+            <picture>
+              <source srcset="images/flogo-300x323.jpg">
+              <img src="images/flogo-300x323.jpg" alt="Logo image">
+            </picture>
+          </a>
+        </div>
+        
+        <div id="title-box">
+          <h1>Temple Inn & Suites</h1>
+        </div>
+        
+        
+        <div id="social-box">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook-circle-64x64.png" alt="return">
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img src="images/linkedin-circle-64x64.png" alt="return">
+          </a>
+        </div>
+      </div>
+      
+      <nav>
+        <button id="hamburger-btn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primary-nav">
+          <li><a href="../hotel/">Home</a></li>
+          <li><a href="temples.html">Temples</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main id="contact-main">
+      
+      <h2>Contact the Temple Inn & Suites</h2>
+      <p>We provide you with the necessary information so that you can speak with customer service employees in our
+        office, call, or simply fill out a form to receive news.
+      </p>
+      
+      <div id="contact-grid">
+        
+        <div id="contact-image-box">
+          <picture>
+            <img src="images/contact/headquarters.jpg" alt="People from the team">
+          </picture>
+        </div>
+        
+        <div id="contact-info-box">
+          <h3 class="">---- VISIT US ----</h3>
+          <div class="contact-info-container">
+            <h4>Address</h4>
+            <p>
+              #696, Street 20 <br>
+              Balcarce, Buenos Aires
+            </p>
+            <h4>Office Hours</h4>
+            <p>
+              Monday – Friday:<br>
+              9:00 a.m. to 5:00 p.m.
+            </p>
+            <h4>E-mail</h4>
+            <p>bcchamber@balcarce.com</p>
+            <h4>Phone numbers</h4>
+            <p>
+              (02266) 42-2993<br>
+              (+54) (2266) 51-3579
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3>Get in touch</h3>
+      </div>
+      <form action="thank-you.html" method="get" id="contact-form">
+        <fieldset>
+          <label for="names" class="top">Names*
+            <input type="text" name="names" id="names" required>
+          </label>
+      
+          <label for="last-name" class="top">Last Name*
+            <input type="text" name="last-name" id="last-name" required>
+          </label>
+      
+          <label class="top">Email*
+            <input type="email" name="email" placeholder="your-email@gmail.com" required>
+          </label>
+      
+          <label for="description-text-area" class="label-textarea">Comment/Questions (optional)
+            <textarea id="description-text-area" name="business-description"
+                      placeholder="Describe briefly your business..." cols="10" rows="10" maxlength="500"></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" value="Receive News" id="contact-submit-btn">
+      </form>
+    </main>
+
+    <footer>
+      <div id="footer-main-box1">
+        <ul>
+          <li><strong>ADDRESS</strong></li>
+          <li>Temple Inn & Suites</li>
+          <li>4800 Montgomery Ln #300</li>
+          <li>Bethesda, MD 20814 U.S.</li>
+          <li class="links-hover-effect"><a href="#header-box1"><strong>Back to the top</strong></a></li>
+        </ul>
+        <hr>
+        <ul>
+          <li><strong>CONTACT INFO</strong></li>
+          <li id="footer-e-mail-address">teminnsuiteshotel@corporation.com</li>
+          <li>801-937-2022</li>
+          <li class="links-hover-effect"><a href="https://goo.gl/maps/wbDfUuZ6pvPDbjM39" target="_blank">
+            <span>&#x1F5FA;</span> <strong>Headquarters</strong></a></li>
+        </ul>
+        <hr>
+        <ul>
+          <li id="find-us"><strong>FIND US</strong></li>
+          <li class="links-hover-effect">
+            <a href="https://www.facebook.com" target="_blank"><strong>Facebook</strong></a>
+          </li>
+          <li class="links-hover-effect">
+            <a href="https://twitter.com" target="_blank"><strong>Twitter</strong></a>
+          </li>
+          <li class="links-hover-effect">
+            <a href="https://https://www.linkedin.com" target="_blank"><strong>Linked In</strong></a>
+          </li>
+        </ul>
+      </div>
+  
+      <div id="footer-main-box2">
+        <hr>
+        <p class="links-hover-effect">
+          Weather data powered by
+          <a href="https://openweathermap.org" target="_blank" id="open-weather-width"><strong>OpenWeather API</strong></a>
+        </p>
+        <hr>
+        <div id="footer-last-line">
+          <p>
+            - &copy; <span id="year"></span>
+            Temple Inn & Suites -
+          </p>
+          <p>
+            - Author: C. Ezequiel Iannone -
+          </p>
+          <p>
+            - <span id="updated-date"></span> -
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
