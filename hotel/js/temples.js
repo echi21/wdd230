@@ -3,7 +3,7 @@ const WEB_ADDRESS = "json/data.json";
 const DIRECTORY_CARDS = document.querySelector("#directory-cards");
 const GRID_BUTTON = document.querySelector("#grid-btn");
 const LIST_BUTTON = document.querySelector("#list-btn");
-let companiesArray = [];
+let templesArray = [];
 
 GRID_BUTTON.addEventListener("click", () => {
   DIRECTORY_CARDS.classList.remove("list");
@@ -12,6 +12,18 @@ GRID_BUTTON.addEventListener("click", () => {
 LIST_BUTTON.addEventListener("click", () => {
   DIRECTORY_CARDS.classList.add("list");
 });
+
+
+// Using the built-in fetch method, calls this URL:
+function main() {
+  fetch(WEB_ADDRESS)
+    .then(tryingToConvertResponseToJson)
+    .then((jsonResult) => {
+      console.log(jsonResult);
+      templesArray = jsonResult;
+      renderContent(templesArray);
+    });
+}
 
 /*
 * The result of parsing push event data as JSON, could be anything that can be represented
@@ -27,29 +39,26 @@ function tryingToConvertResponseToJson(response) {
   }
 }
 
-function renderContent(companiesArray) {
-  companiesArray.forEach((company) => {
+function renderContent(templesArray) {
+  templesArray.forEach((temple) => {
     let sectionElement = document.createElement("section");
     let h3Element = document.createElement("h3");
     let p1Element = document.createElement("p");
     let p2Element = document.createElement("p");
     let p3Element = document.createElement("p");
     let p4Element = document.createElement("p");
-    let aElement = document.createElement("a");
+    let p5Element = document.createElement("p");
     let imgElement = document.createElement("img");
 
-    h3Element.textContent = company.name;
-    p1Element.textContent = company.address;
-    p2Element.textContent = company.phoneNumber;
-    p3Element.textContent = company.membershipLevel;
+    h3Element.textContent = temple.name;
+    p1Element.textContent = temple.address;
+    p2Element.textContent = temple.phoneNumber;
+    p3Element.textContent = temple.services;
+    p4Element.textContent = temple.closureSchedule;
+    p5Element.textContent = temple.history;
 
-    aElement.setAttribute("href", company.webAddress);
-    aElement.setAttribute("target", "_blank");
-    aElement.textContent = `Go to Website`;
-    p4Element.appendChild(aElement);
-
-    imgElement.setAttribute("src", company.image);
-    imgElement.setAttribute("alt", company.name);
+    imgElement.setAttribute("src", temple.image);
+    imgElement.setAttribute("alt", temple.name);
 
     sectionElement.appendChild(imgElement);
     sectionElement.appendChild(h3Element);
@@ -57,20 +66,12 @@ function renderContent(companiesArray) {
     sectionElement.appendChild(p2Element);
     sectionElement.appendChild(p3Element);
     sectionElement.appendChild(p4Element);
+    sectionElement.appendChild(p5Element);
 
     DIRECTORY_CARDS.appendChild(sectionElement);
   });
 }
 
-// Using the built-in fetch method, calls this URL:
-function main() {
-  fetch(WEB_ADDRESS)
-    .then(tryingToConvertResponseToJson)
-    .then((jsonResult) => {
-      console.log(jsonResult);
-      companiesArray = jsonResult;
-      renderContent(companiesArray);
-    });
-}
+
 
 main();

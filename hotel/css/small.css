@@ -550,7 +550,7 @@ nav ul.open {
 /*---------------------DIRECTORY.HTML--------------------*/
 
 #directory-main {
-  width:85%;
+  width:90%;
   margin: 0 auto;
 }
 
@@ -607,11 +607,10 @@ nav ul.open {
 }
 
 #directory-main section {
-  width: 300px;/*Necessary to have all the sections from the same size*/
+  width: 400px;/*Necessary to have all the sections from the same size*/
   margin: .5rem auto;
   border: 1px solid var(--secondary-color);
   border-radius: 1rem;
-  background-color: var(--accent2-color);
 }
 
 #directory-cards img,

@@ -1,18 +1,99 @@
 [
   {
-    "name" : "Mc Cain",
-    "address" : "Km. 61.5, Route 226",
-    "phoneNumber" : "(54 2266) - 439900",
-    "webAddress" : "http://www.mccain.com.ar",
-    "image" : "images/companies/mc-cain.webp",
-    "membershipLevel" : "Gold Membership"
+    "name" : "Buenos Aires Argentina Temple",
+    "address" : "Aut. Tte. Gral. Riccheri N° 4955, B1778DUA Ciudad Evita, Buenos Aires, Argentina",
+    "phoneNumber" : "(54) 11-4693-9700",
+    "services" : [
+      "Clothing rental available", "No cafeteria available", "Patron housing available", "Distribution center nearby"
+    ],
+    "closureSchedule" : [
+      "Saturday, 1 October 2022", "Monday, 3 October 2022 - Monday, 17 October 2022",
+      "Saturday, 24 December 2022 - Sunday, 25 December 2022", "Saturday, 31 December 2022 - Sunday, 1 January 2023"
+    ],
+    "history" : [
+      "2 April 1980, Announced", "20 April 1983, Groundbreaking", "17 January 1986, Dedicated"
+    ],
+    "image" : "images/temples/bs-temple.jpg"
   },
   {
-    "name" : "Capei",
-    "address" : "Km. 61, Route 226",
-    "phoneNumber" : "(54 2266) - 15527379",
-    "webAddress" : "http://www.capei.com.ar",
-    "image" : "images/companies/capei.webp",
-    "membershipLevel" : "Silver Membership"
+    "name" : "Rome Italy Temple",
+    "address" : "Via di Settebagni 376, Rome RM, Italy",
+    "phoneNumber" : "(39) 06-9480-5050",
+    "services" : [
+      "Clothing rental available", "No cafeteria available", "Patron housing available", "Distribution center nearby"
+    ],
+    "closureSchedule" : [
+      "Monday, 19 September 2022 - Monday, 3 October 2022", "Saturday, 24 December 2022 - Monday, 26 December 2022",
+      "Saturday, 31 December 2022 - Sunday, 1 January 2023"
+    ],
+    "history" : [
+      "4 October 2008, Announced", "23 October 2010, Groundbreaking", "10 March 2019, Dedicated"
+    ],
+    "image" : "images/temples/it-temple.jpg"
+  },
+  {
+    "name" : "Edmonton Alberta Temple",
+    "address" : "14335 53rd Ave NW, Edmonton AB T6H 5G6, Canada",
+    "phoneNumber" : "(1) 780-434-7436",
+    "services" : [
+      "No clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"
+    ],
+    "closureSchedule" : [
+      "Monday, 18 July 2022 - Monday, 26 September 2022", "Saturday, 1 October 2022", "Saturday, 24 December 2022",
+      "Saturday, 31 December 2022"
+    ],
+    "history" : [
+      "11 August 1998, Announced", "27 February 1999, Groundbreaking", "11 December 1999, Dedicated"
+    ],
+    "image" : "images/temples/ca-temple.jpg"
+  },
+  {
+    "name" : "Lima Peru Temple",
+    "address" : "Av. Javier Prado Este 6420, Urb. Santa Patricia, La Molina, Lima 12, Peru",
+    "phoneNumber" : "(51) 1-612-7200",
+    "services" : [
+      "Clothing rental available", "No cafeteria available", "Patron housing available", "Distribution center nearby"
+    ],
+    "closureSchedule" : [
+      "Thursday, 28 July 2022 - Friday, 29 July 2022", "Saturday, 1 October 2022",
+      "Monday, 3 October 2022 - Monday, 17 October 2022"
+    ],
+    "history" : [
+      "1 April 1981, Announced", "11 September 1982, Groundbreaking", "10 January 1986, Dedicated"
+    ],
+    "image" : "images/temples/pe-temple.jpg"
+  },
+  {
+    "name" : "Mesa Arizona Temple",
+    "address" : "101 S LeSueur, Mesa AZ 85204-1031, United States",
+    "phoneNumber" : "(1) 480-833-1211",
+    "services" : [
+      "Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"
+    ],
+    "closureSchedule" : [
+      "Saturday, 1 October 2022", "Wednesday, 23 November 2022", "Thursday, 24 November 2022",
+      "Saturday, 24 December 2022", "Saturday, 31 December 2022"
+    ],
+    "history" : [
+      "1 October 1919, Announced", "25 April 1922, Groundbreaking", "23 October 1927, Dedicated"
+    ],
+    "image" : "images/temples/us-temple.jpg"
+  },
+  {
+    "name" : "Montevideo Uruguay Temple",
+    "address" : "Bolonia 1722, Carrasco, 11500 Montevideo, Uruguay",
+    "phoneNumber" : "(598) 2604-7300",
+    "services" : [
+      "No clothing rental available", "No cafeteria available", "Patron housing available", "Distribution center nearby"
+    ],
+    "closureSchedule" : [
+      "Thursday, 25 August 2022", "Saturday, 1 October 2022 - Sunday, 2 October 2022",
+      "Monday, 31 October 2022 - Monday, 14 November 2022", "Saturday, 24 December 2022 - Sunday, 25 December 2022",
+      "Saturday, 31 December 2022"
+    ],
+    "history" : [
+      "2 November 1998, Announced", "27 April 1999, Groundbreaking", "18 March 2001, Dedicated"
+    ],
+    "image" : "images/temples/ur-temple.jpg"
   }
 ]
