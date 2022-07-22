@@ -1,25 +1,14 @@
 
 const WEB_ADDRESS = "json/data.json";
 const DIRECTORY_CARDS = document.querySelector("#directory-cards");
-/*const GRID_BUTTON = document.querySelector("#grid-btn");
-const LIST_BUTTON = document.querySelector("#list-btn");
 let templesArray = [];
-
-GRID_BUTTON.addEventListener("click", () => {
-  DIRECTORY_CARDS.classList.remove("list");
-});
-
-LIST_BUTTON.addEventListener("click", () => {
-  DIRECTORY_CARDS.classList.add("list");
-});
-*/
 
 // Using the built-in fetch method, calls this URL:
 function main() {
   fetch(WEB_ADDRESS)
     .then(tryingToConvertResponseToJson)
     .then((jsonResult) => {
-      console.log(jsonResult);
+      //console.log(jsonResult);
       templesArray = jsonResult;
       renderContent(templesArray);
     });
@@ -32,12 +21,13 @@ function main() {
 function tryingToConvertResponseToJson(response) {
   if (response.ok) {
     let jsonResult = response.json();
-    console.log(jsonResult);
+    //console.log(jsonResult);
     return jsonResult;
   } else {
     console.log("Oh no! Something went WRONG:", response);
   }
 }
+
 
 function renderContent(templesArray) {
   templesArray.forEach((temple) => {
@@ -50,8 +40,7 @@ function renderContent(templesArray) {
     let p5Element = document.createElement("p");
     let imgElement = document.createElement("img");
     let btnElement = document.createElement("button");
-
-
+    btnElement.setAttribute("class", "like-me");
 
     h3Element.textContent = temple.name;
     p1Element.textContent = temple.address;
@@ -63,7 +52,29 @@ function renderContent(templesArray) {
 
     imgElement.setAttribute("src", temple.image);
     imgElement.setAttribute("alt", temple.name);
-    btnElement.setAttribute("class", "like-me");
+
+
+    if (window.localStorage.getItem(temple.id)) {
+      if (window.localStorage.getItem(temple.id) === "yes") {
+        btnElement.textContent = "YOU LIKE THIS";
+      } else {
+        btnElement.textContent = "LIKE"
+      }
+    }
+
+    function calculateLike() {
+      if (window.localStorage.getItem(temple.id) === "yes") {
+        window.localStorage.setItem(temple.id, "no");
+        btnElement.textContent = "LIKE"
+      } else {
+        window.localStorage.setItem(temple.id, "yes");
+        btnElement.textContent = "YOU LIKE THIS";
+      }
+    }
+
+    btnElement.addEventListener("click", () => {
+      calculateLike();
+    });
 
     sectionElement.appendChild(imgElement);
     sectionElement.appendChild(h3Element);
@@ -77,7 +88,5 @@ function renderContent(templesArray) {
     DIRECTORY_CARDS.appendChild(sectionElement);
   });
 }
-
-
 
 main();

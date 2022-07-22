@@ -254,6 +254,7 @@ nav ul.open {
 #index-main-grid h2 {
   text-align: center;
   margin: 1rem 0;
+  padding: .5rem;
 }
 
 #index-main-grid h3 {
@@ -452,7 +453,7 @@ nav ul.open {
 #join-box button,
 #directory-cards button {
   width: 15rem;
-  margin: 2rem;
+  margin: 2rem auto;
   padding: .5rem;
   font-size: 1.2rem;
   color: var(--primary-color);

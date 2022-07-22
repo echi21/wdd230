@@ -1,5 +1,6 @@
 [
   {
+    "id" : "bs",
     "name" : "Buenos Aires Argentina Temple",
     "address" : "Aut. Tte. Gral. Riccheri N° 4955, B1778DUA Ciudad Evita, Buenos Aires, Argentina",
     "phoneNumber" : "(54) 11-4693-9700",
@@ -16,6 +17,7 @@
     "image" : "images/temples/bs-temple.jpg"
   },
   {
+    "id" : "it",
     "name" : "Rome Italy Temple",
     "address" : "Via di Settebagni 376, Rome RM, Italy",
     "phoneNumber" : "(39) 06-9480-5050",
@@ -32,6 +34,7 @@
     "image" : "images/temples/it-temple.jpg"
   },
   {
+    "id" : "ca",
     "name" : "Edmonton Alberta Temple",
     "address" : "14335 53rd Ave NW, Edmonton AB T6H 5G6, Canada",
     "phoneNumber" : "(1) 780-434-7436",
@@ -48,6 +51,7 @@
     "image" : "images/temples/ca-temple.jpg"
   },
   {
+    "id" : "pe",
     "name" : "Lima Peru Temple",
     "address" : "Av. Javier Prado Este 6420, Urb. Santa Patricia, La Molina, Lima 12, Peru",
     "phoneNumber" : "(51) 1-612-7200",
@@ -64,6 +68,7 @@
     "image" : "images/temples/pe-temple.jpg"
   },
   {
+    "id" : "us",
     "name" : "Mesa Arizona Temple",
     "address" : "101 S LeSueur, Mesa AZ 85204-1031, United States",
     "phoneNumber" : "(1) 480-833-1211",
@@ -80,6 +85,7 @@
     "image" : "images/temples/us-temple.jpg"
   },
   {
+    "id" : "ur",
     "name" : "Montevideo Uruguay Temple",
     "address" : "Bolonia 1722, Carrasco, 11500 Montevideo, Uruguay",
     "phoneNumber" : "(598) 2604-7300",
