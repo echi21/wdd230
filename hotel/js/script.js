@@ -74,15 +74,29 @@ const numberDay = currentDate.getDate();
 document.getElementById("current-date").textContent = `${dayName}, ${numberDay} ${monthName}, ${year}`;
 
 /*-------------------------------------------------------------------------------------------------------------------*/
+// Displays a banner on Mondays or Tuesdays only at the very top of the page
+let webPage = window.location.pathname;
+//console.log(webPage);
+if (webPage === "/hotel/") {
+  let banner = document.querySelector("#weather-alert");
+  if (dayName.toLowerCase() === "monday" || dayName.toLowerCase() === "wednesday" || dayName.toLowerCase() === "friday") {
+    banner.style.display = "block";
+  }
 
-//Toggle the menu when the web page is in small size
-function toggleMenu() {
-  document.getElementById("primary-nav").classList.toggle("open");
-  document.getElementById("hamburger-btn").classList.toggle("open");
+  document.getElementById("close-weather-alert-button").onclick = () => {
+    document.getElementById("weather-alert").style.display = "none";
+  }
 }
 
-const x = document.getElementById("hamburger-btn");
-x.onclick = toggleMenu;
+/*-------------------------------------------------------------------------------------------------------------------*/
+//Toggle the menu when the web page is in small size
+function toggleMenu() {
+  document.querySelector("#primary-nav").classList.toggle("open");
+  document.querySelector("#hamburger-btn").classList.toggle("open");
+}
+
+const menuButton = document.querySelector("#hamburger-btn");
+menuButton.onclick = toggleMenu;
 
 /*-------------------------------------------------------------------------------------------------------------------*/
 

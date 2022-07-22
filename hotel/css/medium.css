@@ -2,21 +2,11 @@
 @media only screen and (min-width: 54rem) {
 
   #header-box1 {
-    /*width: 90%;*/
-    /*margin: 0 auto;*/
     text-align: right;
   }
 
   #header-box2 {
     justify-content: space-between;
-  }
-
-  #logo-box {
-    order: 1;
-  }
-
-  #title-box {
-    order: 2;
   }
 
   #logo-box img {
@@ -35,27 +25,19 @@
     font-size: 1.1rem;
   }
 
-  #title-box p {
-    font-size: 1.1rem;
-  }
-
   #social-box {
     display: flex;
     flex-direction: row;
-    order: 3;
   }
 
   /*******************************************************************************************************************/
 
   nav {
     padding: .5rem;
-    order: 0;
     box-shadow: 1px 1px 10px var(--accent2-color);
-    /*text-align: right;*/
   }
 
-  nav button
-  /*#primary-nav*/ {
+  nav button {
     display: none;
   }
 

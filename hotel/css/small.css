@@ -19,9 +19,6 @@ html {
   --secondary-color: #3b5998;
   --accent1-color: black;
   --accent2-color: #3b6b98;
-  /*--accent3-color: #3b7398;
-  --accent4-color: #3b6298;
-  --accent5-color: #3b6898;*/
   --accent6-color: #BFBFBF;
 
   --heading-font: "Noto Serif", Garamond, serif;
@@ -43,8 +40,6 @@ body {
 header {
   margin: 0 auto;
   width: 90%;
-  /*padding-top: 4rem;*/
-  /*background-color: var(--secondary-color);*/
 }
 
 #weather-alert {
@@ -69,14 +64,10 @@ header {
   border-radius: .5rem;
 }
 
-
-
-
 #header-box1 {
   color: var(--secondary-color);
   text-align: center;
   margin: 2rem auto;
-  /*padding: 1rem;*/
 }
 
 #header-box2 {
@@ -85,22 +76,8 @@ header {
   align-items: center;
 }
 
-/*
-#logo-title-box {
-  display: flex;
-  flex-direction: column;
-  /*justify-content: space-around;
-  align-items: center;
-  width: 162px;
-}*/
-
 #logo-box {
-  order: 1;
   box-shadow: 1px 1px 20px var(--accent2-color);
-}
-
-#title-box {
-  order: 2;
 }
 
 #logo-box img {
@@ -111,9 +88,6 @@ header {
 #title-box {
   display: flex;
   text-align: center;
-  order: 1;
-  /*flex-direction: column;*/
-  /*color: var(--accent1-color);*/
 }
 
 #social-box {
@@ -129,7 +103,6 @@ header {
 #social-box img {
   width: 2.5rem;
   height: auto;
-  /*margin: .5rem;*/
 }
 
 h1,
@@ -140,10 +113,8 @@ h3 {
 
 h1 {
   font-size: 2rem;
-  margin: 0;
+  padding: .5rem;
   color: var(--secondary-color);
-  /*text-shadow: 0 0 10px var(--accent3-color);*/
-
 }
 
 h2 {
@@ -159,12 +130,7 @@ h3 {
 /*-------------------------------------------------------*/
 
 nav {
-  /*background-color: var(--secondary-color);*/
-  /*text-align: center;*/
-  /*order: 2;*/
   margin: 1.5rem auto;
-  /*width: 90%;*/
-  /*padding: .5rem;*/
 }
 
 nav button {
@@ -172,23 +138,22 @@ nav button {
   border: none;
   font-size: 3rem;
   color: var(--secondary-color);
-  /*color: var(--accent2-color);*/
   cursor: pointer;
 }
 
-nav ul {
+#primary-nav {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: none;
 }
 
-nav ul li {
+#primary-nav li {
   text-align: center;
   margin: 0 auto;
 }
 
-nav ul.open {
+#primary-nav.open {
   display: block;
 }
 
@@ -200,7 +165,6 @@ nav ul.open {
   text-align: center;
   color: var(--secondary-color);
   font-weight: bold;
-  /*text-align: center;*/
 }
 
 #primary-nav a:hover {
